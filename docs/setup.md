@@ -77,8 +77,9 @@ Shapely as selected). No raw preparation dependency such as pyosmium is needed.
 
 All profiles use the supplied snapshot data. Tide coverage remains Raglan
 2026 plus the first three days of 2027; the installer does not imply full 2027
-coverage, fresh weather/news/alerts or Wikipedia answers. Missing planned
-features are not enabled.
+coverage. On-demand [weather and forecasts](weather.md) are enabled in new
+installations and require internet plus a checked host clock. News, alerts, surf
+and Wikipedia answers remain unimplemented.
 
 ## Start explicitly
 

@@ -20,7 +20,7 @@ and deterministic calculations rather than generated emergency instructions.
 
 The user initially requested recording these ideas, then authorized local
 implementation on 13 October 2026. Live deployment/enablement is separate.
-Online weather/forecast services, NZ-wide weather alerts, news and GeoNet quake information remain separate additions. Offline work must not discard those requirements.
+Online [weather/forecast services](weather.md) are implemented separately, including labelled saved-result fallback. NZ-wide weather alerts, news and GeoNet quake information remain future additions.
 
 ## Feature priorities
 
@@ -410,8 +410,7 @@ the README before coding. Preserve the existing USB protocol and durable worker.
    National graph/resource tests pass on Pi; mapped/disconnected/ambiguous cases
    remain explicit. See [routing setup](nz_routing.md); road table remains a subset.
 7. IMPLEMENTED: Daylight, selected practical guides, and safe calculators.
-8. DEFERRED DEPENDENCY: Add explicit offline fallback for selected online providers after
-   their online implementations exist; test expiry, stale results, and outages.
+8. PARTIAL: Weather/forecast provider and explicit saved-result fallback are implemented and tested. News/quakes/alerts/surf still need online integrations and corresponding expiry/outage policies.
 9. PARTIAL / HARDWARE PENDING: Validate on the actual Pi and room: disconnect host internet while
    keeping mesh active; check replies on a phone, restart persistence, paging,
    memory use, and latency. Record measured results separately from expectations.

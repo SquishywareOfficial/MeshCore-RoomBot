@@ -8,4 +8,6 @@ The Python bot code uses the MIT license in LICENSE; original copyright is retai
 - Routino XML/source: AGPL-3.0-or-later. Native binaries are built from unmodified Routino 3.4.4 source, retained by setup. The data release also includes the matching unmodified source tarball.
 - WMM2025 validation fixture: NOAA/NCEI public-domain model test values; coefficient library attribution is documented in docs/magnetic_bearings.md.
 
+- Online weather: Open-Meteo weather data, CC BY 4.0; geocoding uses GeoNames. Provider terms and source links are in docs/weather.md. No weather snapshots are bundled in code/data releases.
+
 Source dates, attribution and limitations remain available through /bot source and the guides; do not infer live conditions from stored data.

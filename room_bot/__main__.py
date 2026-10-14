@@ -14,6 +14,7 @@ from .clock import SessionClock
 from .commands import Dispatcher
 from .offline import install_offline_commands
 from .community import install_community_commands
+from .weather import install_weather_commands
 
 BOT_HELP = 'Commands: /bot ping | /bot help | /bot about'
 
@@ -92,6 +93,7 @@ def main(argv=None):
     if isinstance(handler, Dispatcher):
         install_offline_commands(handler, args.data_path)
         install_community_commands(handler, args.data_path)
+        install_weather_commands(handler, args.data_path)
     if args.handler:
         module, separator, name = args.handler.partition(':')
         if not separator:

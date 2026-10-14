@@ -1,0 +1,29 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt -r requirements-astronomy.txt -r requirements-water.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Package tracked source and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          archive="MeshCore-RoomBot-${GITHUB_REF_NAME}.zip"
+          git archive --format=zip --prefix=MeshCore-RoomBot/ --output="$archive" HEAD
+          sha256sum "$archive" > SHA256SUMS.txt
+          notes="docs/releases/${GITHUB_REF_NAME}.md"
+          if [ -f "$notes" ]; then
+            gh release create "$GITHUB_REF_NAME" "$archive" SHA256SUMS.txt --verify-tag --title "MeshCore RoomBot ${GITHUB_REF_NAME}" --notes-file "$notes"
+          else
+            gh release create "$GITHUB_REF_NAME" "$archive" SHA256SUMS.txt --verify-tag --title "MeshCore RoomBot ${GITHUB_REF_NAME}" --generate-notes
+          fi

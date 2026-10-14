@@ -2,8 +2,9 @@
 
 Implemented locally on 13 October 2026. Enablement, content import, and a running
 USB-connected bot are separate operations. Nothing here starts a service or
-modifies the MCU's firmware/settings. Weather/news/quakes and Wikipedia/LLM
-answers remain separate future work; no stale-provider fallback exists yet.
+modifies the MCU's firmware/settings. [Online weather/forecasts](weather.md) are
+now implemented separately, including labelled outage caching. News/quakes,
+automatic alerts and Wikipedia/LLM answers remain future work.
 
 ## Install and configure
 

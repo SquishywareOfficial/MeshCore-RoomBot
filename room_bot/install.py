@@ -349,10 +349,11 @@ def install(args, source=SOURCE):
             log=root/'setup-content-check.log')
         executable = build_router(root, stage, args.jobs) if manifest else None
         commands = ['ping', 'help', 'about', 'place', 'towns', 'distance', 'bearing', 'walktime', 'details',
-                    'source', 'directory', 'emergency', 'guide', 'sun', 'tides', 'calc', 'notice', 'checkin', 'lastseen']
+                    'source', 'directory', 'emergency', 'guide', 'sun', 'tides', 'calc', 'notice', 'checkin', 'lastseen',
+                    'weather', 'forecast']
         if manifest:
             commands.append('water')
-        config = {'version': 1, 'enabled_commands': commands, 'data_dir': str(target)}
+        config = {'version': 1, 'enabled_commands': commands, 'data_dir': str(target), 'weather': {'enabled': True}}
         if executable:
             config['routing'] = {'backend': 'routino', 'graph_dir': str(target/'routing/nz'), 'executable': str(executable)}
         proposed = stage/'config.json'

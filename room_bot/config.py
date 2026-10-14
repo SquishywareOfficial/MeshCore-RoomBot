@@ -114,6 +114,25 @@ class CommunitySettings:
 
 
 @dataclass(frozen=True)
+class WeatherSettings:
+    enabled: bool = False
+    timeout_seconds: float = 5
+    cache_seconds: int = 600
+    stale_weather_seconds: int = 7200
+    stale_forecast_seconds: int = 21600
+    cache_entries: int = 128
+
+    def __post_init__(self):
+        if type(self.enabled) is not bool:
+            raise ConfigError('weather.enabled must be boolean')
+        bounded(self.timeout_seconds, 'weather.timeout_seconds', 1, 15, False)
+        bounded(self.cache_seconds, 'weather.cache_seconds', 60, 3600)
+        bounded(self.stale_weather_seconds, 'weather.stale_weather_seconds', self.cache_seconds, 21600)
+        bounded(self.stale_forecast_seconds, 'weather.stale_forecast_seconds', self.cache_seconds, 86400)
+        bounded(self.cache_entries, 'weather.cache_entries', 4, 512)
+
+
+@dataclass(frozen=True)
 class Config:
     version: int = 1
     enabled_commands: tuple = ('ping', 'help', 'about')
@@ -126,6 +145,7 @@ class Config:
     aliases: tuple = ()
     routing: RoutingSettings = field(default_factory=RoutingSettings)
     water: WaterSettings = field(default_factory=WaterSettings)
+    weather: WeatherSettings = field(default_factory=WeatherSettings)
 
     def __post_init__(self):
         if type(self.version) is not int or self.version != 1:
@@ -150,6 +170,8 @@ class Config:
             raise ConfigError('routing must be validated settings')
         if not isinstance(self.water, WaterSettings):
             raise ConfigError('water must be validated settings')
+        if not isinstance(self.weather, WeatherSettings):
+            raise ConfigError('weather must be validated settings')
         if not isinstance(self.aliases,tuple) or len(self.aliases)>128:
             raise ConfigError('aliases must contain at most 128 saved mappings')
         seen=set()
@@ -179,6 +201,8 @@ class Config:
             options['routing'] = RoutingSettings(**checked_object(options['routing'], RoutingSettings.__dataclass_fields__, 'routing'))
         if 'water' in options:
             options['water'] = WaterSettings(**checked_object(options['water'], WaterSettings.__dataclass_fields__, 'water'))
+        if 'weather' in options:
+            options['weather'] = WeatherSettings(**checked_object(options['weather'], WeatherSettings.__dataclass_fields__, 'weather'))
         if 'aliases' in options:
             if not isinstance(options['aliases'],dict): raise ConfigError('aliases must be an object')
             options['aliases']=tuple(options['aliases'].items())

@@ -4,6 +4,8 @@
 
 A Python bot for a USB-connected MeshCore Enhanced room server, designed for a Raspberry Pi Zero 2 W. Offline NZ towns, street/place lookups, walking distances, compass bearings and mapped-water searches are supported. Optional handlers include tide predictions, daylight, saved emergency references, noticeboard/check-ins and calculators.
 
+On-demand **weather and three-day forecasts** default to Hamilton and accept other NZ locations, e.g. `/bot weather Raglan` and `/bot forecast Mount Maunganui`. Saved results can be used during an outage with an explicit stale label. [Weather setup and commands](docs/weather.md).
+
 **Start here:** [repeatable installer](docs/setup.md), [command guide](docs/offline_usage.md), [releases and NZ map bundle](https://github.com/SquishywareOfficial/MeshCore-RoomBot/releases). Firmware remains in [MeshCore-Enhanced](https://github.com/SquishywareOfficial/MeshCore-Enhanced).
 
 The installer downloads and verifies national map data; it preserves your settings and bot progress. Full NZ routing needs 64-bit Linux/Pi OS. Basic setup also supports Windows.
@@ -14,9 +16,9 @@ radio is required.** The room still handles normal encrypted radio delivery to
 its members. This interface is for the direct USB connection, not remote radio
 administration, Ethernet CLI, or companion firmware.
 
-Local room builds identify the feature as `v1.17.1-sq5-bot`. Other XIAO room
-features, identity/settings, journal formats and the phone/radio protocol are
-unchanged. Update the same room role without erasing data; see the
+Use Enhanced room firmware with the USB bot API (SQ5 and later). The bot
+code is separate from MCU firmware and does not alter room identity/settings,
+journal formats or the phone/radio protocol. Update the same room role without erasing data; see the
 [firmware installation guide](https://github.com/SquishywareOfficial/MeshCore-Enhanced/blob/main/docs/enhanced_builds.md).
 
 ## Run the supplied monitor or sample bot
