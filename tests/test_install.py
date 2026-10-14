@@ -128,6 +128,8 @@ class SetupTests(unittest.TestCase):
         args = SimpleNamespace(root=target, profile='basic', manifest=None, bundle_file=None,
                                bundle_url=None, jobs=1)
         with patch('room_bot.install.setup_python', return_value=Path(sys.executable)), \
+                patch('room_bot.install.load_tide_manifest',return_value={'id':'nz-tides-fixture','archive':{'bytes':1},'files':{}}), \
+                patch('room_bot.install.install_tides'), \
                 redirect_stdout(io.StringIO()):
             install(args, SOURCE)
             install(args, SOURCE)

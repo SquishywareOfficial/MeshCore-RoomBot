@@ -63,8 +63,11 @@ python setup_bot.py --profile basic
 
 Basic setup also installs geographic bearings/place/towns, reference guides,
 calculators, tides/daylight and community handlers. It imports the supplied
-LINZ settlement points, two Get Ready references, original-XIAO guides, Raglan
-tides and Hamilton–Raglan saved routes. It does **not** install national
+LINZ settlement points, two Get Ready references, original-XIAO guides and
+Hamilton–Raglan saved routes. Both profiles download and verify the national
+[tide bundle](tides.md): 322 official sites, 2026–2029 primary predictions and
+secondary offsets, with original sources/provenance. The separate tide ZIP is
+about 15 MiB; use --tide-bundle-file for offline transfer. It does **not** install national
 walking/street/water indexes; those require the NZ profile.
 
 Full NZ native routing on Windows requires running setup in Linux/WSL. The
@@ -75,9 +78,10 @@ environment even when the host lacks `ensurepip`/global pip, then use the
 project requirement files (including offline WMM2025, and optional Astral/
 Shapely as selected). No raw preparation dependency such as pyosmium is needed.
 
-All profiles use the supplied snapshot data. Tide coverage remains Raglan
-2026 plus the first three days of 2027; the installer does not imply full 2027
-coverage. On-demand [weather and forecasts](weather.md) are enabled in new
+All profiles use versioned snapshot data. National tide coverage follows
+[the published site tables and secondary parameters](tides.md); missing official
+values remain unavailable. Tide lookups use saved coverage first and refresh
+only near the coverage/secondary-edition review boundary. On-demand [weather and forecasts](weather.md) are enabled in new
 installations and require internet plus a checked host clock. News, alerts, surf
 and Wikipedia answers remain unimplemented.
 
@@ -136,3 +140,23 @@ data license notices and original Routino source availability.
 
 Commit the small manifest/installer/docs; keep the large ZIP as a release asset,
 not a Git blob. Never silently replace a previously published data version.
+
+
+## Prefetched data audit
+
+Every runtime dataset used by implemented features is covered by setup:
+
+| Data | How setup supplies it |
+| --- | --- |
+| LINZ settlement catalogue, emergency references, hardware guides, sample routes | Bundled, validated content imports |
+| All official NZ tide sites, annual tables and secondary offsets | Verified national tide release, both profiles; original raw sources included |
+| NZ walking graph, street origins, inland-water geometry | Verified NZ map release, NZ profile only |
+| WMM2025 magnetic coefficients | Included in pinned pygeomag dependency |
+| Daylight calculations | Astral dependency; no downloaded daily table needed |
+| Weather/forecast results | On-demand provider requests and durable cache; no preloaded weather snapshot |
+
+No hidden development-machine downloads are required for these commands.
+Noticeboard/check-ins and USB delivery state are private runtime data, preserved
+locally and never imported from the preparation machine. Radio/news/quakes/surf
+and Wikipedia are unimplemented; no data for those services is claimed. The
+discussed 16-day advance-weather caching remains a separate change.

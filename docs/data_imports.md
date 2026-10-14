@@ -2,8 +2,9 @@
 
 Implemented: separate content storage, strict JSON imports, offline lookup
 handlers, geographic tools and tide conversion. See offline_usage.md for the
-complete current command list and supplied dataset coverage. No production data is downloaded
-automatically. The bot's delivery state DB is a separate schema and file.
+complete current command list and supplied dataset coverage. The repeatable installer
+now downloads verified national map/tide releases; [tide gathering and refresh](tides.md)
+are implemented separately from these small content imports. The bot's delivery state DB is a separate schema and file.
 
 Run these from the standalone project root:
 

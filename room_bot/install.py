@@ -23,7 +23,7 @@ import zipfile
 SOURCE = Path(__file__).resolve().parents[1]
 CONTENT = ('references/getready-earthquakes.json', 'references/getready-floods.json',
            'places/linz-settlements-2026-10-13.json', 'routes/hamilton-raglan-2026-10-13.json',
-           'tides/raglan-2026.json', 'tides/raglan-2027-jan-prefix.json', 'guides/xiao-enhanced-sq7.json')
+           'guides/xiao-enhanced-sq7.json')
 GRAPH_NAMES = ('nodes.mem', 'segments.mem', 'ways.mem', 'relations.mem', 'profiles.xml',
                'tagging.xml', 'translations.xml', 'COPYING-Routino', 'manifest.json')
 MAP_NAMES = {'streets.sqlite3', 'water.sqlite3', 'MAP-NOTICES.md'} | {
@@ -148,6 +148,41 @@ def unpack_bundle(archive, destination, manifest):
                     output.write(block)
             if not matches(target, record):
                 raise SetupError(f'Expanded asset checksum mismatch: {entry.filename}')
+
+
+def load_tide_manifest(path):
+    raw = Path(path).read_bytes()
+    if len(raw) > 262144:raise SetupError('Tide manifest too large')
+    m = json.loads(raw)
+    if (not isinstance(m,dict) or m.get('version') != 1 or
+            not re.fullmatch(r'nz-tides-[a-z0-9-]{1,64}',str(m.get('id',''))) or
+            not isinstance(m.get('files'),dict) or not 4<=len(m['files'])<=500 or
+            not {'tides.sqlite3','TIDE-NOTICES.md','sources/catalogue.json','sources/provenance.json'}.issubset(m['files'])):
+        raise SetupError('Unsupported national tide manifest')
+    for name in m['files']:
+        safe_child(Path('.'),name)
+        if name not in ('tides.sqlite3','TIDE-NOTICES.md','sources/catalogue.json','sources/provenance.json') and not (
+                name.startswith('sources/') and name.count('/')==1 and name.endswith('.csv')):
+            raise SetupError('Unexpected tide asset')
+    for r in [m.get('archive'),*m['files'].values()]:
+        if (not isinstance(r,dict) or type(r.get('bytes')) is not int or not 0<r['bytes']<=512*1024**2 or
+                not re.fullmatch(r'[a-f0-9]{64}',str(r.get('sha256','')))):
+            raise SetupError('Invalid tide asset size/checksum')
+    if sum(r['bytes'] for r in m['files'].values())>1024**3:raise SetupError('Tide bundle too large')
+    return m
+
+
+def install_tides(root, destination, manifest, bundle_file=None):
+    if bundle_file:
+        archive = bundle_file.expanduser().resolve()
+    else:
+        archive = download(manifest['archive']['url'],root/'cache'/f'{manifest["id"]}.zip',manifest['archive'])
+    unpack_bundle(archive,destination,manifest)
+    from .tide_data import check_store
+    report = check_store(destination/'tides.sqlite3')
+    for key in ('sites','daily_sites','annual_files','events','years'):
+        if report[key]!=manifest['coverage'][key]:raise SetupError('Tide coverage does not match manifest')
+    print(f'National tides verified: {report["sites"]} sites; years {report["years"]}',flush=True)
 
 
 def unpack_routino(archive, stage):
@@ -285,6 +320,7 @@ def install(args, source=SOURCE):
     if root == source.resolve():
         raise SetupError('Choose an installation directory separate from the checkout')
     manifest = load_manifest(args.manifest) if args.profile == 'nz' else None
+    tide_manifest = load_tide_manifest(getattr(args,'tide_manifest',source/'installer/nz-tides.json'))
     if manifest and (os.name != 'posix' or sys.byteorder != 'little' or sys.maxsize <= 2**32):
         raise SetupError('Full NZ setup requires 64-bit little-endian Linux (Pi OS 64-bit or WSL). Basic setup supports Windows.')
     if manifest and not args.bundle_file and not (args.bundle_url or manifest['archive'].get('url')):
@@ -300,7 +336,8 @@ def install(args, source=SOURCE):
     os.close(fd)
     stage = Path(tempfile.mkdtemp(prefix='.setup-', dir=root))
     try:
-        needed = sum(r['bytes'] for r in manifest['files'].values()) * 2 + manifest['archive']['bytes'] if manifest else 0
+        needed = sum(r['bytes'] for r in tide_manifest['files'].values()) * 2 + tide_manifest['archive']['bytes']
+        if manifest:needed += sum(r['bytes'] for r in manifest['files'].values()) * 2 + manifest['archive']['bytes']
         if shutil.disk_usage(root).free < needed + 512 * 1024 ** 2:
             raise SetupError('Insufficient free space for dependencies and staged data')
         files = app_files(source)
@@ -319,7 +356,7 @@ def install(args, source=SOURCE):
             os.replace(temporary_app, app)
         python = setup_python(root, source, args.profile)
         content_id = hashlib.sha256(''.join(sha256(source/'datasets'/name) for name in CONTENT).encode()).hexdigest()[:16]
-        data_id = (manifest['id'] if manifest else 'basic') + '-' + content_id
+        data_id = (manifest['id'] if manifest else 'basic') + '-' + tide_manifest['id'] + '-' + content_id
         target = root/'data'/data_id
         staged_data = stage/'data'
         completed = target/'setup-data.json'
@@ -334,6 +371,7 @@ def install(args, source=SOURCE):
                     archive = download(args.bundle_url or manifest['archive']['url'],
                                        root/'cache'/f'{manifest["id"]}.zip', manifest['archive'])
                 unpack_bundle(archive, staged_data, manifest)
+            install_tides(root,staged_data,tide_manifest,getattr(args,'tide_bundle_file',None))
             import_content(python, app, staged_data, source)
             atomic_json(staged_data/'setup-data.json', {'id': data_id, 'archive_sha256': manifest['archive']['sha256'] if manifest else None})
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -345,6 +383,8 @@ def install(args, source=SOURCE):
             for name, record in manifest['files'].items():
                 if not matches(safe_child(target, name), record):
                     raise SetupError('An installed NZ asset has changed; it was preserved')
+        for name,record in tide_manifest['files'].items():
+            if not matches(safe_child(target,name),record):raise SetupError('An installed tide asset has changed; it was preserved')
         run([python, '-m', 'room_bot.data', '--data-dir', target, 'list'], cwd=app,
             log=root/'setup-content-check.log')
         executable = build_router(root, stage, args.jobs) if manifest else None
@@ -389,6 +429,8 @@ def main(argv=None):
     parser.add_argument('--manifest', type=Path, default=SOURCE/'installer/nz-offline-data.json')
     parser.add_argument('--bundle-file', type=Path, help='Previously downloaded archive for offline transfer')
     parser.add_argument('--bundle-url', help='HTTPS mirror; must match the pinned manifest')
+    parser.add_argument('--tide-manifest',type=Path,default=SOURCE/'installer/nz-tides.json')
+    parser.add_argument('--tide-bundle-file',type=Path,help='Previously downloaded, verified national tide ZIP')
     parser.add_argument('--jobs', type=int, choices=range(1, 9), default=1, help='Native compile jobs (1 for Pi Zero)')
     args = parser.parse_args(argv)
     try:

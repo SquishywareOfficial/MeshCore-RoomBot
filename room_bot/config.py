@@ -133,6 +133,20 @@ class WeatherSettings:
 
 
 @dataclass(frozen=True)
+class TideSettings:
+    auto_refresh: bool = True
+    refresh_before_days: int = 30
+    retry_hours: int = 168
+    timeout_seconds: float = 5
+
+    def __post_init__(self):
+        if type(self.auto_refresh) is not bool:raise ConfigError('tides.auto_refresh must be boolean')
+        bounded(self.refresh_before_days, 'tides.refresh_before_days', 1, 365)
+        bounded(self.retry_hours, 'tides.retry_hours', 1, 8760)
+        bounded(self.timeout_seconds, 'tides.timeout_seconds', 1, 15, False)
+
+
+@dataclass(frozen=True)
 class Config:
     version: int = 1
     enabled_commands: tuple = ('ping', 'help', 'about')
@@ -146,6 +160,7 @@ class Config:
     routing: RoutingSettings = field(default_factory=RoutingSettings)
     water: WaterSettings = field(default_factory=WaterSettings)
     weather: WeatherSettings = field(default_factory=WeatherSettings)
+    tides: TideSettings = field(default_factory=TideSettings)
 
     def __post_init__(self):
         if type(self.version) is not int or self.version != 1:
@@ -172,6 +187,7 @@ class Config:
             raise ConfigError('water must be validated settings')
         if not isinstance(self.weather, WeatherSettings):
             raise ConfigError('weather must be validated settings')
+        if not isinstance(self.tides, TideSettings):raise ConfigError('tides must be validated settings')
         if not isinstance(self.aliases,tuple) or len(self.aliases)>128:
             raise ConfigError('aliases must contain at most 128 saved mappings')
         seen=set()
@@ -203,6 +219,8 @@ class Config:
             options['water'] = WaterSettings(**checked_object(options['water'], WaterSettings.__dataclass_fields__, 'water'))
         if 'weather' in options:
             options['weather'] = WeatherSettings(**checked_object(options['weather'], WeatherSettings.__dataclass_fields__, 'weather'))
+        if 'tides' in options:
+            options['tides'] = TideSettings(**checked_object(options['tides'], TideSettings.__dataclass_fields__, 'tides'))
         if 'aliases' in options:
             if not isinstance(options['aliases'],dict): raise ConfigError('aliases must be an object')
             options['aliases']=tuple(options['aliases'].items())

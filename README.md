@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/SquishywareOfficial/MeshCore-RoomBot/actions/workflows/tests.yml/badge.svg)](https://github.com/SquishywareOfficial/MeshCore-RoomBot/actions/workflows/tests.yml)
 
-A Python bot for a USB-connected MeshCore Enhanced room server, designed for a Raspberry Pi Zero 2 W. Offline NZ towns, street/place lookups, walking distances, compass bearings and mapped-water searches are supported. Optional handlers include tide predictions, daylight, saved emergency references, noticeboard/check-ins and calculators.
+A Python bot for a USB-connected MeshCore Enhanced room server, designed for a Raspberry Pi Zero 2 W. Offline NZ towns, street/place lookups, walking distances, compass bearings and mapped-water searches are supported. Nationwide offline-first LINZ tides cover all 322 catalogued sites, with direct predictions through 2029 and qualified secondary-port estimates. Optional handlers include daylight, saved emergency references, noticeboard/check-ins and calculators. [Tide commands and coverage](docs/tides.md).
 
 On-demand **weather and three-day forecasts** default to Hamilton and accept other NZ locations, e.g. `/bot weather Raglan` and `/bot forecast Mount Maunganui`. Saved results can be used during an outage with an explicit stale label. [Weather setup and commands](docs/weather.md).
 
@@ -384,7 +384,7 @@ internal dataset metadata. Access and safety qualifications remain.
 
 See [offline setup, commands and coverage](docs/offline_usage.md). Optional
 components now include saved directory/emergency/guides, source-backed place and
-route distances, bearings/towns/walking-time tools, Raglan tide snapshots,
+route distances, bearings/towns/walking-time tools, national tide predictions,
 voluntary check-ins/community notices, daylight and deterministic calculators.
 Only the three original sample commands are enabled by default. The valid
 [example config](examples/offline_config.json) enables the implemented features

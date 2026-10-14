@@ -39,6 +39,13 @@ def source_reply(data_path,args,router=None):
                 store=cls(path)
                 try:sources.append((name,dict(store.metadata)))
                 finally:store.close()
+        if (Path(data_path)/'tides.sqlite3').exists() and (wanted is None or 'tides' in wanted):
+            from .tide_data import TideStore
+            tides=TideStore(Path(data_path)/'tides.sqlite3')
+            try:
+                sources.append(('tides',dict(tides.metadata,title='National LINZ tide predictions and secondary offsets',
+                                            revision='Published annual years '+','.join(map(str,tides.metadata['years'])))))
+            finally:tides.close()
         if router is not None and (wanted is None or 'routing' in wanted):
             if topic is None:
                 sources.append(('routing',{'title':'Offline pedestrian graph'}))

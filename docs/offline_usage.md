@@ -79,8 +79,10 @@ Distance, place, bearing, towns and water origins support coordinates and the op
 national street index; see [input forms, installation and limits](origins.md).
 Water lookup uses a separate optional index; see [water approaches and limits](water.md).
 
-Tide coverage is Raglan, 1 January-31 December 2026, plus 1-3 January 2027. Full
-2027 conversion rejects its ambiguous local 4 April 02:09 timestamp rather than
+New installations use [national tide data](tides.md): all 322 official sites,
+2026–2029 primary predictions plus secondary-port estimates. Source-fold uncertainty
+is preserved explicitly. Legacy manual Raglan snapshots cover 2026 plus 1–3 January
+2027; the old strict converter rejects its ambiguous local 4 April 02:09 timestamp rather than
 choosing a daylight-saving fold without evidence. Converter rejects nonexistent
 local times too. Source height datum is not stated in the CSV, so replies say so.
 Do not interpret prediction heights as actual depth, observed levels or warnings.

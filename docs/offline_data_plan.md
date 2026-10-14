@@ -402,9 +402,10 @@ the README before coding. Preserve the existing USB protocol and durable worker.
    import/search. Verify that requests make no internet calls offline.
 4. IMPLEMENTED: Noticeboard and voluntary check-ins, with bounded persistence,
    author/alias handling, expiry/withdrawal, and restart/idempotency checks.
-5. IMPLEMENTED SUBSET: Raglan 2026 and 1-3 January 2027 imported; full 2027
-   has an unresolved repeated DST timestamp. Supported annual tide CSVs and test NZ dates/DST, adjacent
-   days, missing coverage, and offline/unknown-clock behaviour.
+5. IMPLEMENTED NATIONAL COVERAGE: [National tides](tides.md) include all 322
+   official sites, 88 direct-prediction sites for 2026–2029 and 234 qualified
+   secondary estimates. DST ambiguity is retained explicitly, with validated
+   Chatham local time and source refresh only near coverage/review boundaries.
 6. IMPLEMENTED: 4,903 LINZ settlements, labelled place/bearing/towns/walking-time
    tools, sample walking/road table and optional nationwide offline walking graph.
    National graph/resource tests pass on Pi; mapped/disconnected/ambiguous cases

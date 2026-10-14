@@ -17,7 +17,7 @@ LOCATION_DESCRIPTIONS = {
     'bearing': 'Magnetic compass bearing by default. /bot location bearing [compass|true|both] FROM to TO. Example: /bot location bearing both Hamilton to Raglan.',
     'place': 'Look up reference coordinates or a street ID. Example: /bot location place Tattersfield Place Hamilton.',
     'walktime': 'Rough walking hours from distance and assumed pace. Example: /bot location walktime 10 4. Excludes stops and terrain.',
-    'tides': 'Saved tide predictions; requires a trusted date and coastal location. Example: /bot location tides Raglan.',
+    'tides': 'Offline-first LINZ tides; requires a checked date and coastal site. /bot location tides Raglan. Find sites: /bot location tides locations NAME.',
     'sun': 'Sunrise and sunset; requires a trusted date. Example: /bot location sun Hamilton.',
     'details': 'Extra information from your latest place, distance, bearing or water lookup. Example: /bot location details.',
 }

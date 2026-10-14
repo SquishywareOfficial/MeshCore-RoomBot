@@ -1,0 +1,1457 @@
+{
+  "version": 1,
+  "id": "nz-tides-20261014-v1",
+  "coverage": {
+    "sites": 322,
+    "daily_sites": 88,
+    "events": 494468,
+    "annual_files": 352,
+    "prepared_at": "2026-10-14T07:51:57.990413+00:00",
+    "years": [
+      2026,
+      2027,
+      2028,
+      2029
+    ],
+    "secondary_url": "https://www.linz.govt.nz/sites/default/files/2026-06/NZNA_Secondary-ports-2026-27.csv",
+    "secondary_revision": "2026-27",
+    "secondary_review_after": "2027-07-01",
+    "source_url": "https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions",
+    "license": "LINZ data, CC BY 4.0; https://www.linz.govt.nz/copyright"
+  },
+  "archive": {
+    "url": "https://github.com/SquishywareOfficial/MeshCore-RoomBot/releases/download/tides-data-20261014-v1/nz-tides-20261014-v1.zip",
+    "bytes": 15741597,
+    "sha256": "321c03e1a8eaa045172b9c0b33042d24db6488e189f23182365d27ecf527c0f7"
+  },
+  "files": {
+    "tides.sqlite3": {
+      "bytes": 56336384,
+      "sha256": "a77b640816c5203d96dd697694b6acff56848a8f4a6c5de90089e9e9ae480903"
+    },
+    "TIDE-NOTICES.md": {
+      "bytes": 643,
+      "sha256": "e311396ddd4489fdcf2f41f301a07bc7c46b1bb9664b61f707f79a59dd729d98"
+    },
+    "sources/akaroa-2026.csv": {
+      "bytes": 19448,
+      "sha256": "40179bee6b84c8415c363fd5bc7e3b8b8dfbc17b6b37b3d0a4a905dd17a6f992"
+    },
+    "sources/akaroa-2027.csv": {
+      "bytes": 19440,
+      "sha256": "9862614d923a21f4518c1421ce804cb812bd94e1762d5f86e5c39d1e01886414"
+    },
+    "sources/akaroa-2028.csv": {
+      "bytes": 19502,
+      "sha256": "c5ab93279f3cdd9cf94d1b222a13f2945a0640e8cfe12686ac06eae70ebc4b2f"
+    },
+    "sources/akaroa-2029.csv": {
+      "bytes": 19442,
+      "sha256": "7c3b219284c69eadac82870e784af00e1024d28399c596ba7315fefa722181db"
+    },
+    "sources/anakakata-bay-2026.csv": {
+      "bytes": 19455,
+      "sha256": "be256846d96516ffd1843b0fe52682f477b7bdc7a1bf20dfeb16f6373bace57e"
+    },
+    "sources/anakakata-bay-2027.csv": {
+      "bytes": 19447,
+      "sha256": "dd961734746e776c7fe837b8307375b497e2888592bda6d87c929cbefda8bf21"
+    },
+    "sources/anakakata-bay-2028.csv": {
+      "bytes": 19509,
+      "sha256": "55179156c675c7538b0fb35e2464fc25f85391757aea833f255f077274a649d5"
+    },
+    "sources/anakakata-bay-2029.csv": {
+      "bytes": 19476,
+      "sha256": "0d93239ddaa5a1d623cda8ede97d93fed4e69457286376ae06edb7e7352b75ee"
+    },
+    "sources/anawhata-2026.csv": {
+      "bytes": 19452,
+      "sha256": "1314c36d195074d41d7d6d584be96fb71b1f416d88bc5864d6fff4efe5fcab8d"
+    },
+    "sources/anawhata-2027.csv": {
+      "bytes": 19442,
+      "sha256": "5f446d7b1db61f891b9628e5706268657336d27be5bfbdf7f11c05a1dc0b7c3d"
+    },
+    "sources/anawhata-2028.csv": {
+      "bytes": 19504,
+      "sha256": "3c7abf5fbbac0c399b1739891e2ca5006f563c661d4f851a1a7de88fce33e899"
+    },
+    "sources/anawhata-2029.csv": {
+      "bytes": 19442,
+      "sha256": "cc2ce9d2e59fcf4ed38e6fe40cfd486c74bf61ee1efc8684bcb4cbd30cd0a372"
+    },
+    "sources/auckland-2026.csv": {
+      "bytes": 19484,
+      "sha256": "172ee51de7752fef784e0da652ff8cd294327d838491461d89f032241ef28432"
+    },
+    "sources/auckland-2027.csv": {
+      "bytes": 19494,
+      "sha256": "ba75268fd82fb8b98151a127ee3d7737b5871badc908c92829932bb29c1108ea"
+    },
+    "sources/auckland-2028.csv": {
+      "bytes": 19538,
+      "sha256": "0cc212618a800b3cd3f365d3ccd67a504046f2c181ff638ae601839a1977753a"
+    },
+    "sources/auckland-2029.csv": {
+      "bytes": 19492,
+      "sha256": "cf4577f044b86e6a1d51b511fa4574da3f623ed7e9c6203901edcf9dc08dec80"
+    },
+    "sources/ben-gunn-wharf-2026.csv": {
+      "bytes": 19456,
+      "sha256": "7ed8175d6d843f409f991e7b2461d7b3703fffe257417085a7dcc80b9fc6b17e"
+    },
+    "sources/ben-gunn-wharf-2027.csv": {
+      "bytes": 19448,
+      "sha256": "136e409655fc7a17fb56d2438e54dac4559bd0775ac74d2096d0c1e841374c65"
+    },
+    "sources/ben-gunn-wharf-2028.csv": {
+      "bytes": 19510,
+      "sha256": "3ba913224ec9392cd85d9ada09a54169661e44e1438e137deac13486b050a75f"
+    },
+    "sources/ben-gunn-wharf-2029.csv": {
+      "bytes": 19448,
+      "sha256": "33ebda9827a01564dfccf444c8b36a5739bce827bf849c0cf4d113924934c1ce"
+    },
+    "sources/bluff-2026.csv": {
+      "bytes": 19489,
+      "sha256": "d6e3d48c8401b23444f9c0704b41506ca5a725aa329e38c32ac8f387d53e32a3"
+    },
+    "sources/bluff-2027.csv": {
+      "bytes": 19489,
+      "sha256": "785c05aedcd28514aa15eade850fc9ebf4cf54beb4831299dd7ec9e434f5e4fe"
+    },
+    "sources/bluff-2028.csv": {
+      "bytes": 19535,
+      "sha256": "686be3b5e913d2fd4fb9785544c9f073a6a79d412e2506f0dd26dd4a883b0747"
+    },
+    "sources/bluff-2029.csv": {
+      "bytes": 19489,
+      "sha256": "15b85b09dfca5b234afde1c5ccd98d5d9e10050661d65581845fc07513d61b9c"
+    },
+    "sources/castlepoint-2026.csv": {
+      "bytes": 19487,
+      "sha256": "b825acd14fe6407524bb959caed51b68bb11382353316fcbbb9d88fcbe6aba22"
+    },
+    "sources/castlepoint-2027.csv": {
+      "bytes": 19495,
+      "sha256": "9b10e008929f0e70e0e60cad36d245b0ff24d30915f4d9a6e95de543885e25c8"
+    },
+    "sources/castlepoint-2028.csv": {
+      "bytes": 19552,
+      "sha256": "14d4b4a0633a816f0b845cbe9ca80fdac508302157bc0045db4f1dc82f28b5bc"
+    },
+    "sources/castlepoint-2029.csv": {
+      "bytes": 19491,
+      "sha256": "418e5b5a301f2b73fd82409759d238e1f37543178fa9d9dbedf672b7e83ae658"
+    },
+    "sources/charleston-2026.csv": {
+      "bytes": 19448,
+      "sha256": "fb92635cdcf9540fb0143cc8b3d82a892f403bec3c4138621ada199d5c0ee2b2"
+    },
+    "sources/charleston-2027.csv": {
+      "bytes": 19456,
+      "sha256": "24753e6e7794af55d0a95e0f397cd8509c90b4431b0d8207bba466e78fecf3b1"
+    },
+    "sources/charleston-2028.csv": {
+      "bytes": 19510,
+      "sha256": "574eeb4b5abcb8e3950dd57aa2d62bf729e8a17503127af85d5623e667791266"
+    },
+    "sources/charleston-2029.csv": {
+      "bytes": 19448,
+      "sha256": "141613cce3db45c07bd06eeb475f8eb45e15312422decd7801287a64f714fdb9"
+    },
+    "sources/dargaville-2026.csv": {
+      "bytes": 19486,
+      "sha256": "26dec0cd4269f430848dc1a4fa99e7e3619ca0c264ff1be6a2bf74cc7ddd97e5"
+    },
+    "sources/dargaville-2027.csv": {
+      "bytes": 19494,
+      "sha256": "a62190feb531be69b01dc99437d1a7ddd98e01a6ebfbe08a8cc517a4b7a90dfc"
+    },
+    "sources/dargaville-2028.csv": {
+      "bytes": 19542,
+      "sha256": "a1b3e3e7f64a7a9a79693c3c96c6e9cc342ef8c903ed82958eb250c2678b50e4"
+    },
+    "sources/dargaville-2029.csv": {
+      "bytes": 19494,
+      "sha256": "d87f218c99b459a463f23f4d9e226471a7e18eaec7f75cba063803d3d120e339"
+    },
+    "sources/deep-cove-2026.csv": {
+      "bytes": 19485,
+      "sha256": "d2613a1023a832eb0acc98e5a29cf95606dedd14f1cb77a7254343ee5c3ade7f"
+    },
+    "sources/deep-cove-2027.csv": {
+      "bytes": 19493,
+      "sha256": "93e655e64f581e03d4564200b895d49e135cba0f2c45c9fce51a2725d293662a"
+    },
+    "sources/deep-cove-2028.csv": {
+      "bytes": 19539,
+      "sha256": "00108d0ae5b1d3e39dcd2427622f14102736e3966998cb1689e068f3ec9446fe"
+    },
+    "sources/deep-cove-2029.csv": {
+      "bytes": 19493,
+      "sha256": "6e49463671449816004925dfb76f8659413df7ebc974c2501cb4cc9c71b8b934"
+    },
+    "sources/dog-island-2026.csv": {
+      "bytes": 19444,
+      "sha256": "f675709cf3d58a134fad0396adb2a379b6a3fdcb3e80e5ccdb24ba02d39082df"
+    },
+    "sources/dog-island-2027.csv": {
+      "bytes": 19452,
+      "sha256": "defe4a372f1f799f22011e8dec80d2d66551ba3e982d0bdd60ed87a64dac7cf8"
+    },
+    "sources/dog-island-2028.csv": {
+      "bytes": 19498,
+      "sha256": "90d0ae5be532b80285fb7d56539f0e869eff1c3c0a3a2e2f417d60de94730dd7"
+    },
+    "sources/dog-island-2029.csv": {
+      "bytes": 19452,
+      "sha256": "9a2b8f7583ab6f7351879428b49632de8849b023645c27cbc32ebb6617bf199f"
+    },
+    "sources/dunedin-2026.csv": {
+      "bytes": 19491,
+      "sha256": "ef4aab927e8ae1933aa5ee2771ceb01f68c5b067346a25ad56ece8b34164d63e"
+    },
+    "sources/dunedin-2027.csv": {
+      "bytes": 19489,
+      "sha256": "d266302028a46bc62e7a1c7b5e4f281a48f28adc2b8c29e790b11120680d3340"
+    },
+    "sources/dunedin-2028.csv": {
+      "bytes": 19554,
+      "sha256": "38fbe109263c45c98112e0857d7f44ec499af2ef50449a1922a42a5277a32c6b"
+    },
+    "sources/dunedin-2029.csv": {
+      "bytes": 19483,
+      "sha256": "c2ee3b5956aacfa486402c83e9f9785a7708c1fbdc839fcf032388537bb6b812"
+    },
+    "sources/elaine-bay-2026.csv": {
+      "bytes": 19496,
+      "sha256": "31f9902b13d771cea3cedf3ff9dae27cd9ecde8d866da9286e9749940d309212"
+    },
+    "sources/elaine-bay-2027.csv": {
+      "bytes": 19486,
+      "sha256": "8a2dae04e852f62c00d6ce3fe4a314e90fbb78bcb7f2d58e9d209d680d3928ed"
+    },
+    "sources/elaine-bay-2028.csv": {
+      "bytes": 19548,
+      "sha256": "854875201ef2b6b42a9000fc63e7d0d3aa3df97afa1bfc5b126dc0311f732a56"
+    },
+    "sources/elaine-bay-2029.csv": {
+      "bytes": 19486,
+      "sha256": "0ca4b2c33edd7463ad690f559a7bacb7f8f816d443b2138330fb128630b79f4f"
+    },
+    "sources/elie-bay-2026.csv": {
+      "bytes": 19456,
+      "sha256": "aa5b241466a48255aca6f47adcf2704537192198072ce1f7ae6b8e1248ab78d4"
+    },
+    "sources/elie-bay-2027.csv": {
+      "bytes": 19446,
+      "sha256": "470169cc2c9bd710977963620549da9d68f5cf460a3c03e38e7db4ec17cec4f0"
+    },
+    "sources/elie-bay-2028.csv": {
+      "bytes": 19508,
+      "sha256": "ea95b98a0049bf4a2bc1c7895ad2169e595c786ab9a059f84f460fb60ebf2169"
+    },
+    "sources/elie-bay-2029.csv": {
+      "bytes": 19446,
+      "sha256": "fdb28806bdc03d13488d5a063c7514f6d893899e2594636c472d4b1d9e5cc504"
+    },
+    "sources/fishing-rock-raoul-island-2026.csv": {
+      "bytes": 19503,
+      "sha256": "a40d19edfda253060f5420cfb95611fb4bbc6939dbfd0f94c45b650164821332"
+    },
+    "sources/fishing-rock-raoul-island-2027.csv": {
+      "bytes": 19511,
+      "sha256": "ec6799d495176c86cbaf373803294709eef75665ba3bff9ff5bae852966f08fc"
+    },
+    "sources/fishing-rock-raoul-island-2028.csv": {
+      "bytes": 19557,
+      "sha256": "b1f612a017be4e48a3e362c3b25fff19ad439b930c662ef77282d51106e165a4"
+    },
+    "sources/fishing-rock-raoul-island-2029.csv": {
+      "bytes": 19511,
+      "sha256": "4c8418f757a751529c88acacbbe93779f2647a1754f7b9d9918e94d67b475385"
+    },
+    "sources/flour-cask-bay-2026.csv": {
+      "bytes": 19490,
+      "sha256": "2ea0914f6210ab37698ffc630c3e7488603e0227d6f899a05eb9912fe1227670"
+    },
+    "sources/flour-cask-bay-2027.csv": {
+      "bytes": 19498,
+      "sha256": "59b0a086303ebc19581b4c84b2d980c31d286a644ac3d789ef98cd0eb0df13ec"
+    },
+    "sources/flour-cask-bay-2028.csv": {
+      "bytes": 19544,
+      "sha256": "90b03c0679324c7b004c14a76f60d02822a5f3d40775ab076c67dea7fcb22a8d"
+    },
+    "sources/flour-cask-bay-2029.csv": {
+      "bytes": 19498,
+      "sha256": "b1fc611f884fe8d609ec356cb86802de476f2a58dd67e69f6e8cc9ad059d7b58"
+    },
+    "sources/fresh-water-basin-2026.csv": {
+      "bytes": 19454,
+      "sha256": "0e70f4f1233a7dd49ed6aebf2ebd3db7ffa6d35419059eb21d5a7642818c3944"
+    },
+    "sources/fresh-water-basin-2027.csv": {
+      "bytes": 19462,
+      "sha256": "a1f4b473d8fb735fe93a679a1ab3e241bcc87851b35b9a35014adad6de2d5430"
+    },
+    "sources/fresh-water-basin-2028.csv": {
+      "bytes": 19508,
+      "sha256": "71ccb1ad309fe041fedfe47b7b67d18b4e88f6563f1003f339f3ee4104acd7f0"
+    },
+    "sources/fresh-water-basin-2029.csv": {
+      "bytes": 19462,
+      "sha256": "d62552895f6e5d865e6c730331e4b89a7c64ba9f2114dfaa7db304131c18fb65"
+    },
+    "sources/gisborne-2026.csv": {
+      "bytes": 19484,
+      "sha256": "cda6491fe968d950e9b9e4a951fa7e1bdc82f2fd1410ca3243b6eba453555652"
+    },
+    "sources/gisborne-2027.csv": {
+      "bytes": 19492,
+      "sha256": "dc93205a9b64ae91f3ec8e0c9abaf7468209e3d2428e1dd2a79c26ebc6221a30"
+    },
+    "sources/gisborne-2028.csv": {
+      "bytes": 19538,
+      "sha256": "775e4b1f47cb1c2455b92279837cd0d6f1b0349f7b97c0c175bb1286b9330807"
+    },
+    "sources/gisborne-2029.csv": {
+      "bytes": 19492,
+      "sha256": "f40ccbb5231588ff337f3ccdc9b71cf88e20e67b969c7671eef4548ff39d30a1"
+    },
+    "sources/green-island-2026.csv": {
+      "bytes": 19454,
+      "sha256": "b46734776d65c561f8ba7a2ab5e7fd8ed1e21af4453cbadfd73f46fa56f0007e"
+    },
+    "sources/green-island-2027.csv": {
+      "bytes": 19446,
+      "sha256": "f7f4afbb52500acc2b2ab6c3ac173ad786f37c403694db4a24cd9517de545cec"
+    },
+    "sources/green-island-2028.csv": {
+      "bytes": 19508,
+      "sha256": "a69b24f6c4c6cd69b47037de85fab58ce49d4286fba9ed7cfa5a55cfb423467b"
+    },
+    "sources/green-island-2029.csv": {
+      "bytes": 19446,
+      "sha256": "3bbd554d805d25c2b950377aba3c4d463c66a918a984037be939dcd0c083dd4c"
+    },
+    "sources/halfmoon-bay-oban-2026.csv": {
+      "bytes": 19503,
+      "sha256": "1bbc1db08d9af790e9f1e0c2abaf094bf14db06b9cec6bba9fa2360bfe411ae0"
+    },
+    "sources/halfmoon-bay-oban-2027.csv": {
+      "bytes": 19503,
+      "sha256": "738c8ffc811de442266c3a845c5fac1fe2af150669b7ab1d49052fffd0c8f587"
+    },
+    "sources/halfmoon-bay-oban-2028.csv": {
+      "bytes": 19549,
+      "sha256": "c63a0c6961403caa980542c20ee2fa469e6a3fcdab738499e9730f42aed8c0f4"
+    },
+    "sources/halfmoon-bay-oban-2029.csv": {
+      "bytes": 18717,
+      "sha256": "27974463288b30872231b76c9be1b72446ee50ccb72e559679c9174906b26c76"
+    },
+    "sources/havelock-2026.csv": {
+      "bytes": 19494,
+      "sha256": "b83352829c8fc92b468ce577ab30c1e9387e8a1592e6d82eb6617f497c471aac"
+    },
+    "sources/havelock-2027.csv": {
+      "bytes": 19484,
+      "sha256": "2466c8e44d5043430ca397b0310c3bab29f3094e5c0009b59724aef2bbbc5acd"
+    },
+    "sources/havelock-2028.csv": {
+      "bytes": 19546,
+      "sha256": "7ce288faefb99949700c51558280490f39c3e27ae4c21025dc93ea2892b91bd4"
+    },
+    "sources/havelock-2029.csv": {
+      "bytes": 19484,
+      "sha256": "edf6ef28ada6b59c8e0cb0165a5b303cec2ab271285105425cb277d1777058f3"
+    },
+    "sources/helensville-2026.csv": {
+      "bytes": 19487,
+      "sha256": "0299a1b3491113d072bf918cac4d80ce580b09431e1cbc4689ccb3ae30c61e62"
+    },
+    "sources/helensville-2027.csv": {
+      "bytes": 19495,
+      "sha256": "fed12ba149370c3b515ebd6ff53f95dc3ca91f63b0ae34d6064fd856f329e894"
+    },
+    "sources/helensville-2028.csv": {
+      "bytes": 19541,
+      "sha256": "d9ece25bc8a600c1ad475709bc65030a62f6a1e5f20b5a63adfcd6ca438ce2a2"
+    },
+    "sources/helensville-2029.csv": {
+      "bytes": 19495,
+      "sha256": "9d610f2d68781ca49f8b044c521c74c0a6bc0623ed414065dd5aacbb959717ea"
+    },
+    "sources/huruhi-harbour-2026.csv": {
+      "bytes": 19490,
+      "sha256": "501d91c95498fa1b479a679aa676afbea8136dcf2f9bd6f7ea2ba9c6058ce857"
+    },
+    "sources/huruhi-harbour-2027.csv": {
+      "bytes": 19498,
+      "sha256": "ecb8d27ae03f62f985c49eaf3d340d6c9792b754fa8cf6188bde5d5b9bbefaa7"
+    },
+    "sources/huruhi-harbour-2028.csv": {
+      "bytes": 19544,
+      "sha256": "fc3ce7eb905c077287cb91e1aa8b20ad210c972558c5d40e34b09239f62e8cae"
+    },
+    "sources/huruhi-harbour-2029.csv": {
+      "bytes": 19498,
+      "sha256": "250cc18951bd5b7bd4e581bb557f382120897bfbcea9b5874646025b49d6c566"
+    },
+    "sources/jackson-bay-2026.csv": {
+      "bytes": 19487,
+      "sha256": "ae69885376514acd4a8af6500e363ef331577f80a5fb55ac3f20694fab8b5c5f"
+    },
+    "sources/jackson-bay-2027.csv": {
+      "bytes": 19495,
+      "sha256": "79223aeba88cd358e0570501d1949f02ce8505fb1661fde5b2c4dcd647187d90"
+    },
+    "sources/jackson-bay-2028.csv": {
+      "bytes": 19541,
+      "sha256": "c2cf3bfcefaf3bc7b71ddca749ad9c716f9342479791c364c0dcc87479cee584"
+    },
+    "sources/jackson-bay-2029.csv": {
+      "bytes": 19495,
+      "sha256": "3251b0ad91c89bd3ab2d806caddce30fd7cbeaccad3f0f1309b2e0d7bcae86f9"
+    },
+    "sources/kaikoura-2026.csv": {
+      "bytes": 19482,
+      "sha256": "bfa8496a280aedf541051a50d7bd6108afdb8908fd4799f8b2a5131b605c1f87"
+    },
+    "sources/kaikoura-2027.csv": {
+      "bytes": 19493,
+      "sha256": "2d32593a4e04937430f92aaeb0d79f66e237749472b9b24409960fdc29adab9e"
+    },
+    "sources/kaikoura-2028.csv": {
+      "bytes": 19547,
+      "sha256": "5960718d97c1f14e6bfa1caf1ad0b380d98287d2c02762f8e5c220e33b0924fb"
+    },
+    "sources/kaikoura-2029.csv": {
+      "bytes": 18903,
+      "sha256": "04bc5d81a98641279860cc37a351e23a6b8a49b512b67ecd5f352f76704dfeed"
+    },
+    "sources/kaingaroa-chatham-island-2026.csv": {
+      "bytes": 19460,
+      "sha256": "48dbaaa24e1e0a01cd42d743855847b99fbface18014517576156027054737ed"
+    },
+    "sources/kaingaroa-chatham-island-2027.csv": {
+      "bytes": 19468,
+      "sha256": "496af1db1aba320543bfee99c1463ace3f07ee10570d89d61479c1629e13c0a2"
+    },
+    "sources/kaingaroa-chatham-island-2028.csv": {
+      "bytes": 19516,
+      "sha256": "93d98472b5d4eccc91aba175497f7420448f5e0c2c4120dc3b6470591c939e54"
+    },
+    "sources/kaingaroa-chatham-island-2029.csv": {
+      "bytes": 19468,
+      "sha256": "70ba3e90189fd890b34f8bac8a9e4ff55625664102a6d3fb2c643beca989b19f"
+    },
+    "sources/kaiteriteri-2026.csv": {
+      "bytes": 19455,
+      "sha256": "2d2c62514690347451094aff14c36efe7da4eff909a7c4536199bdd68f082e06"
+    },
+    "sources/kaiteriteri-2027.csv": {
+      "bytes": 19445,
+      "sha256": "e9b79a67f055bf144de8b9d1b729eb2fcde90a182cdd8558f4576a89dce3d95a"
+    },
+    "sources/kaiteriteri-2028.csv": {
+      "bytes": 19507,
+      "sha256": "3463e9acbb05bbcb2e0288e0cfb3199841e5c30af1303a4b6702f485191034ba"
+    },
+    "sources/kaiteriteri-2029.csv": {
+      "bytes": 19445,
+      "sha256": "7720766187cd04365d598dc016aaa4317011bf47045ba1de52e14b356ac7e93d"
+    },
+    "sources/kaituna-river-entrance-2026.csv": {
+      "bytes": 19447,
+      "sha256": "9eb9b87824a4d02d12352f917fd6d03b07da87047ad616f57db5334417af5670"
+    },
+    "sources/kaituna-river-entrance-2027.csv": {
+      "bytes": 19455,
+      "sha256": "06e3e3b8ec41480cd628f112d50bf9b8a3df702feedaa2b68293a6a1b1a953ca"
+    },
+    "sources/kaituna-river-entrance-2028.csv": {
+      "bytes": 19501,
+      "sha256": "975a7a76aaed9a12a4d490b47fab745ec6bccbfe27cae0db460ff6d07b216a04"
+    },
+    "sources/kaituna-river-entrance-2029.csv": {
+      "bytes": 19455,
+      "sha256": "876bbbafac5945247028412355ab0e81a6c8fb85dd148c8167e319076055e2ad"
+    },
+    "sources/kawhia-2026.csv": {
+      "bytes": 19490,
+      "sha256": "fc77b29492b5d70da0e524b14ceab14816b494445bdf66dc22130fda881031bd"
+    },
+    "sources/kawhia-2027.csv": {
+      "bytes": 19482,
+      "sha256": "16621c1e573bc2d19e86518bd92347a6c0aee9ccf00086298fbe4d6d46dd2819"
+    },
+    "sources/kawhia-2028.csv": {
+      "bytes": 19544,
+      "sha256": "7a1260e694b0e26104e4ec0ae11bf7cf531914b74b758fd2508e2238bcfe5d56"
+    },
+    "sources/kawhia-2029.csv": {
+      "bytes": 19482,
+      "sha256": "e39b16598a2d506c0b623c80cd0136c53cb6cf457716c685fdbff7c6b3e6ead5"
+    },
+    "sources/korotiti-bay-2026.csv": {
+      "bytes": 19446,
+      "sha256": "89292b6d93c583e675ee0ced7aba5a72b35683fcfbd108c78a07dc005442d81b"
+    },
+    "sources/korotiti-bay-2027.csv": {
+      "bytes": 19454,
+      "sha256": "f4cc219e5b8442db22b1a8168686a05f682fcb40c23161a5017495cdcbffc89e"
+    },
+    "sources/korotiti-bay-2028.csv": {
+      "bytes": 19500,
+      "sha256": "ecc73d33095524b6520315be5199bd461467793406a8cfae3ff2b0e986170022"
+    },
+    "sources/korotiti-bay-2029.csv": {
+      "bytes": 19454,
+      "sha256": "b936134fc9f23064655e8351928948a3df9e7c9077042192dfb8f21a80489c2a"
+    },
+    "sources/leigh-2026.csv": {
+      "bytes": 19439,
+      "sha256": "2a3496f76d18d8ac6bca69fdfa3ba8e4f15b33ecfd8ebc8c6da080bed65aad55"
+    },
+    "sources/leigh-2027.csv": {
+      "bytes": 19449,
+      "sha256": "f8f9760943b5ec3adabd4f915cbe47fe2a825a46102c16687d1ecbc103522793"
+    },
+    "sources/leigh-2028.csv": {
+      "bytes": 19493,
+      "sha256": "5b78137be8d27dcee69d32cea09c552e24d024f4700bfe386753e8fea6c98448"
+    },
+    "sources/leigh-2029.csv": {
+      "bytes": 19447,
+      "sha256": "b5cbe5aa9d6e69d87904f88b7515035bb61c441a6489f29acd5c23aa436d559f"
+    },
+    "sources/long-island-2026.csv": {
+      "bytes": 19495,
+      "sha256": "ed6009292cc59ce93141a2a1f816184500c51584b2b859b6708c8d44138da63d"
+    },
+    "sources/long-island-2027.csv": {
+      "bytes": 19487,
+      "sha256": "7322d93c26a9a8b5822c2ebe3538d3fc4538aefcc1b861190bddf2ed8cbe8db3"
+    },
+    "sources/long-island-2028.csv": {
+      "bytes": 19549,
+      "sha256": "85c2dbb913390037b1a8d290e253d40bea4140295b3f6fddf4d838a13d077939"
+    },
+    "sources/long-island-2029.csv": {
+      "bytes": 19495,
+      "sha256": "6c05240e7a91d5bc3b44cfcbc6b232912e04e803e99c3c9b431639e3dad66b91"
+    },
+    "sources/lottin-point-wakatiri-2026.csv": {
+      "bytes": 19457,
+      "sha256": "9eac55be7f96b634001551dcfc6022300b9fcffdca2ef81bd94310c347b053dc"
+    },
+    "sources/lottin-point-wakatiri-2027.csv": {
+      "bytes": 19465,
+      "sha256": "8bbae36a227d19809ada4fb99f10a8b8a50962d2017db999c320963b19ff1fa6"
+    },
+    "sources/lottin-point-wakatiri-2028.csv": {
+      "bytes": 19511,
+      "sha256": "e673dbc259c984a24dc608d1210216856aacc16932e860ff61f2dbfac97b5513"
+    },
+    "sources/lottin-point-wakatiri-2029.csv": {
+      "bytes": 18736,
+      "sha256": "154d079869aa29f4dce1e7f3512a8262ce4d19620bd7565250f8ad39068649e9"
+    },
+    "sources/lyttelton-2026.csv": {
+      "bytes": 19485,
+      "sha256": "59e1b32e08df758ccc0561324af2812ff94643c0490fd48da535928ca6601f7f"
+    },
+    "sources/lyttelton-2027.csv": {
+      "bytes": 19493,
+      "sha256": "82e899e77a9d7a5e08bc1c8147d454cd04534f6b3ef300fced21678dd9ec65b9"
+    },
+    "sources/lyttelton-2028.csv": {
+      "bytes": 19547,
+      "sha256": "49319e5bef07560b177f6a0b7e9fede05899120b2cc89c20f35825f1fb1d5c1f"
+    },
+    "sources/lyttelton-2029.csv": {
+      "bytes": 19485,
+      "sha256": "3a7031ff09f8ae7eab0cf2313265af24530705e91af567482a3433ad85169704"
+    },
+    "sources/man-o-war-bay-2026.csv": {
+      "bytes": 19490,
+      "sha256": "9b40b3a5b5187090dde467ae5ef121dbf06c5931593539876e32fc3045f49b84"
+    },
+    "sources/man-o-war-bay-2027.csv": {
+      "bytes": 19497,
+      "sha256": "4541e6356cf27084ddc3d62156de79f9217101da38c877bfc1e9ca9f3e0a219b"
+    },
+    "sources/man-o-war-bay-2028.csv": {
+      "bytes": 19543,
+      "sha256": "a06f6131b8305f453b1952bf8cd242bab5343584ec91bae82b615f59875404b2"
+    },
+    "sources/man-o-war-bay-2029.csv": {
+      "bytes": 18602,
+      "sha256": "365bbbd26e5a50fb858d11d85f8508b025d4f0de2fd4815ec048d9dd8c81c1d7"
+    },
+    "sources/mana-marina-2026.csv": {
+      "bytes": 19533,
+      "sha256": "7d2fcf39cad9a3468177be23a869475af124e523dcbf91f30587d8a6f75533a3"
+    },
+    "sources/mana-marina-2027.csv": {
+      "bytes": 19487,
+      "sha256": "d40afbfce554cbeab632386884194067bdfa736a251f5ed9605fe8c04449aaf3"
+    },
+    "sources/mana-marina-2028.csv": {
+      "bytes": 19549,
+      "sha256": "70458c8c548fc0aeba62c86d7d6105de8fd3274f8a91a213fc3136dfa8761340"
+    },
+    "sources/mana-marina-2029.csv": {
+      "bytes": 19489,
+      "sha256": "d389112eaf10a6f288bc08e87d9a0dcee30d61da40cc89c55cea9373ceada806"
+    },
+    "sources/manu-bay-2026.csv": {
+      "bytes": 19450,
+      "sha256": "ddcaa7a456ce7b53290ad35d7dc1ef8fcab39cbe69dd551c5263e9cfec21d3c5"
+    },
+    "sources/manu-bay-2027.csv": {
+      "bytes": 19442,
+      "sha256": "574d144b6536fc451bc924549749afebf8aead979a2a834ce3717fb3727e2f7d"
+    },
+    "sources/manu-bay-2028.csv": {
+      "bytes": 19504,
+      "sha256": "dbfb1cd374cfd770d0118445c61721a7bba8312983f8e46ecd33ece438e8158b"
+    },
+    "sources/manu-bay-2029.csv": {
+      "bytes": 19444,
+      "sha256": "ce7ceb1d2960f20bd65c648a68e2dec15800e81b105c6442559b07881933879c"
+    },
+    "sources/mapua-2026.csv": {
+      "bytes": 19487,
+      "sha256": "1b00a31d1ac66721f0264e740ec1b575c86d74fe06ffc49139a54eb5464dfa60"
+    },
+    "sources/mapua-2027.csv": {
+      "bytes": 19482,
+      "sha256": "0c0aa1a81c10abecf7c222717357796700321c637cd26cc6ca13ac504ca34082"
+    },
+    "sources/mapua-2028.csv": {
+      "bytes": 19544,
+      "sha256": "717e3511b88dadd5f47bfae9c4813a52ee7fbc09986a663236ed7feff732fe08"
+    },
+    "sources/mapua-2029.csv": {
+      "bytes": 19482,
+      "sha256": "480c257940e45878e5b5d4055d39d3148b966020a63674026b58ce0b3e73adee"
+    },
+    "sources/marsden-point-2026.csv": {
+      "bytes": 19489,
+      "sha256": "eeac2a95348dc9f05830a2792f1b8245694abb64eb3782a8ffe058546aef00a2"
+    },
+    "sources/marsden-point-2027.csv": {
+      "bytes": 19497,
+      "sha256": "e0177c8b2393b2a1191066984cc82a3b231c0722ff037bac7dae77f6032e1bf7"
+    },
+    "sources/marsden-point-2028.csv": {
+      "bytes": 19543,
+      "sha256": "13395ab3edf854acf8f4dedbc4d552bbc13afa41f3791da4eb1ee2c54a4db9a0"
+    },
+    "sources/marsden-point-2029.csv": {
+      "bytes": 19497,
+      "sha256": "b38a0e6684040c30dce5250e7b9fc2750bf671524db3865c4902a640c6a0fbdd"
+    },
+    "sources/matiatia-bay-2026.csv": {
+      "bytes": 19489,
+      "sha256": "54160d756fc4a20c03409ce7bea2d05213d4d68e67aaf374a9a97a06e244d8d5"
+    },
+    "sources/matiatia-bay-2027.csv": {
+      "bytes": 19497,
+      "sha256": "a9adf67f07c857f95668dda8f756ef9bda8a5bd36178ba9ceb9d561117bc030c"
+    },
+    "sources/matiatia-bay-2028.csv": {
+      "bytes": 19543,
+      "sha256": "37c002a9ecd9dbfc5aead2c6ae7b249436953c97a964a35e3438a07be5f84898"
+    },
+    "sources/matiatia-bay-2029.csv": {
+      "bytes": 19497,
+      "sha256": "df1dc7a7e484fb33dd5d276836e9360332a1b5ff24bb35f2a25a848d48c29eea"
+    },
+    "sources/motuara-island-2026.csv": {
+      "bytes": 19460,
+      "sha256": "9fe3a13aaf21291152092dccf21cb69660caf0eab3f6c0d379165d614b8bc8ce"
+    },
+    "sources/motuara-island-2027.csv": {
+      "bytes": 19452,
+      "sha256": "c25d22fffa95bba24481a11e8b1c4148e48973f350bfab2687b986a2c9fa6471"
+    },
+    "sources/motuara-island-2028.csv": {
+      "bytes": 19514,
+      "sha256": "0344380109898b1adc9aaf9375cc855a16ea1ed68c022208bbaa2f54b5c8e112"
+    },
+    "sources/motuara-island-2029.csv": {
+      "bytes": 19460,
+      "sha256": "8d3f9e7509ed5a5a6cdb25fe54176f249c1c67ab212105ff3241b4641ef8d39b"
+    },
+    "sources/moturiki-island-2026.csv": {
+      "bytes": 19491,
+      "sha256": "4eac95ab6994316a97523c6f3c3471bb50bee89a35ea69377d6308dbe91efdda"
+    },
+    "sources/moturiki-island-2027.csv": {
+      "bytes": 19499,
+      "sha256": "17cb1cf93eb0764a0d2ef67087065bb651ba26421bef70e1195fe8b4ab8e1b16"
+    },
+    "sources/moturiki-island-2028.csv": {
+      "bytes": 19545,
+      "sha256": "d3cc4e21e4e9bf6f93b2cf6a88a28451956c7a19325de5773e919c511c589450"
+    },
+    "sources/moturiki-island-2029.csv": {
+      "bytes": 19499,
+      "sha256": "8834330d9fb7df80660a5547e51ad05f4a6d6703081a64d679bcd7a5d65bbc53"
+    },
+    "sources/napier-2026.csv": {
+      "bytes": 19482,
+      "sha256": "f2d298c6d8245d3c94a0c72156bab1afb6102686899205581eb87d6db1d13f7c"
+    },
+    "sources/napier-2027.csv": {
+      "bytes": 19490,
+      "sha256": "ca940300ffe12ddbe030f11c4a470c26f993be39744386e72ce625c07346c84a"
+    },
+    "sources/napier-2028.csv": {
+      "bytes": 19536,
+      "sha256": "2ea4a083cc5ea4159e9b594b5837ea292798e0f5b3c5057cd3b26b3672be5f52"
+    },
+    "sources/napier-2029.csv": {
+      "bytes": 19490,
+      "sha256": "247eb500c4210e99b2e88c08ffe288a1f80a9196cf7439d61775b287b060c081"
+    },
+    "sources/nelson-2026.csv": {
+      "bytes": 19492,
+      "sha256": "70a87a1cfd9cd3fd543e492d2334f4afa7e9687ace6c6be7d0d4d413e9907ed9"
+    },
+    "sources/nelson-2027.csv": {
+      "bytes": 19482,
+      "sha256": "db399f3a24124968e4bd051b533fb81ffbce373c0a6c248d062896de41e94c72"
+    },
+    "sources/nelson-2028.csv": {
+      "bytes": 19544,
+      "sha256": "03aa2063ce7d28f91daaa08ec97712b3d9996bddac7607bc48d452da2be2fee3"
+    },
+    "sources/nelson-2029.csv": {
+      "bytes": 19482,
+      "sha256": "b413c4abef7f9217f0ede741741464b08f204adca61762238f22961b1082696e"
+    },
+    "sources/new-brighton-pier-2026.csv": {
+      "bytes": 19454,
+      "sha256": "41cdf0234f74b18595503b0942fedd5802bcea7d05903958ca9a360dfb6187de"
+    },
+    "sources/new-brighton-pier-2027.csv": {
+      "bytes": 19462,
+      "sha256": "12e41a915ca9ed1159a0cbdbeeb277940cb4f66ec14baa92ad8d5b83642a7925"
+    },
+    "sources/new-brighton-pier-2028.csv": {
+      "bytes": 19516,
+      "sha256": "123116832babe557bf9e8a1895ff6f54e89926993da01e8a93d54de329622d14"
+    },
+    "sources/new-brighton-pier-2029.csv": {
+      "bytes": 19454,
+      "sha256": "07d5f446fff939ee2b426a1531b13b283d6286c34cb1a21bea5e7c33970c3c51"
+    },
+    "sources/north-cape-otou-2026.csv": {
+      "bytes": 19493,
+      "sha256": "e889a83827e09e6f1ba332d12fa79ecbc4565a9d5f64a6fc9bf15545abec774c"
+    },
+    "sources/north-cape-otou-2027.csv": {
+      "bytes": 19501,
+      "sha256": "b18c8f4b48c3bde3a42ca095e5b510b57d3e8e194adf493d5ac8026a9a1eec77"
+    },
+    "sources/north-cape-otou-2028.csv": {
+      "bytes": 19547,
+      "sha256": "2c44f1af4597f3f329bc33c0f206d62b7c3d3b2a8df0cd85bc4b72b48ddae268"
+    },
+    "sources/north-cape-otou-2029.csv": {
+      "bytes": 19501,
+      "sha256": "f40065ff84802342f23c3fe2ac5a6940acf58d31b95dfc03a4ab13edde594270"
+    },
+    "sources/oamaru-2026.csv": {
+      "bytes": 19490,
+      "sha256": "cc2c12e2827f2ab2cba75975981f02f314a0eb7ce5faa21d252e4bcc8c261093"
+    },
+    "sources/oamaru-2027.csv": {
+      "bytes": 19482,
+      "sha256": "7be65a1206fbab2136080324aa9ea0b6e7a7a85a5a7cc925674cacb8480a5722"
+    },
+    "sources/oamaru-2028.csv": {
+      "bytes": 19544,
+      "sha256": "8af78fcc516a4997bdf24e370c94228dfc423b568e16a74ab2c225a4dd4c463b"
+    },
+    "sources/oamaru-2029.csv": {
+      "bytes": 19482,
+      "sha256": "38a8f5d92b3c375dfc960e111db8d60bd760ede3c38575ee27fcf5558d43c0ea"
+    },
+    "sources/okukari-bay-2026.csv": {
+      "bytes": 19488,
+      "sha256": "6a0eed1577eb004c57cd83a90007682541d9a8a235e15dfd9b41b1152bc03bc2"
+    },
+    "sources/okukari-bay-2027.csv": {
+      "bytes": 19496,
+      "sha256": "fea2c9a521719037b33826bea57e4a58acded22b2c1e71007a3639f2def1bf38"
+    },
+    "sources/okukari-bay-2028.csv": {
+      "bytes": 19542,
+      "sha256": "d08e00dfaefe142c5e4f3bb6a073fad738e16358d9e7bec54b2f061a26347b9f"
+    },
+    "sources/okukari-bay-2029.csv": {
+      "bytes": 19496,
+      "sha256": "3a8cb14656c1308292ddc4157746ce2c61528bbdfd9e8200a09d44aeb1cf58b0"
+    },
+    "sources/omaha-bridge-2026.csv": {
+      "bytes": 19450,
+      "sha256": "ad647b6dbc29d58c50b0f081b20ab83f4c6210996605c258218b5528ba472b00"
+    },
+    "sources/omaha-bridge-2027.csv": {
+      "bytes": 19460,
+      "sha256": "096b6c6a225cdf24bd0ebc15900d59c556508fec117729f039be64d3f931f0cc"
+    },
+    "sources/omaha-bridge-2028.csv": {
+      "bytes": 19504,
+      "sha256": "0b82030ed981f686ed90255ce9d421732f32a4c4386cf9c4727cc59358f6df7b"
+    },
+    "sources/omaha-bridge-2029.csv": {
+      "bytes": 19458,
+      "sha256": "e90842eaf63332a31bd014aceae25a2b3d575b92182fe1902b503c519b24dd86"
+    },
+    "sources/omokoroa-2026.csv": {
+      "bytes": 19485,
+      "sha256": "3cae99909a7dfea5e8e2fe3fb9f217e56602b71c442d2646f9746a2f6775deba"
+    },
+    "sources/omokoroa-2027.csv": {
+      "bytes": 19493,
+      "sha256": "d0f9d231ca053149e40af3df33d29e6e407bb43113bc362437611037622a9dac"
+    },
+    "sources/omokoroa-2028.csv": {
+      "bytes": 19539,
+      "sha256": "e022210272ab10a6006f9226e84588584dc34695538b53ab030f3cf0d9cac829"
+    },
+    "sources/omokoroa-2029.csv": {
+      "bytes": 19493,
+      "sha256": "0c2e5e0fbbebf3c260dd8630eb7d84d5d8719e67286879b614e45dcfb13e7abc"
+    },
+    "sources/onehunga-2026.csv": {
+      "bytes": 19492,
+      "sha256": "4accb9d719f214171b204fb2d761ac89a58d01bdaa7e0ba0d125cca88fa3c66f"
+    },
+    "sources/onehunga-2027.csv": {
+      "bytes": 19484,
+      "sha256": "7f966e1cb4b94d48017c754336e0ab1ff535bdb4af6353542398d8ca9bf77f65"
+    },
+    "sources/onehunga-2028.csv": {
+      "bytes": 19546,
+      "sha256": "5e5ad05b900bfd4fcdbab119ab6156584192f9ef0649f02087484ac9da52a855"
+    },
+    "sources/onehunga-2029.csv": {
+      "bytes": 19484,
+      "sha256": "115bedb5101cff5217b9d0ae73ae46278e834ecfb60e3433392eb49d8976404b"
+    },
+    "sources/opononi-2026.csv": {
+      "bytes": 19491,
+      "sha256": "49d43e164e6b9f14dac4a5d922bb2f735d7d7e7d32f7228d98f63ad9ad69e06e"
+    },
+    "sources/opononi-2027.csv": {
+      "bytes": 19483,
+      "sha256": "e4147a8d1d0c6d69a1335feb9a9b5083dc45b07385477acdd6dd1d8fadd6ed30"
+    },
+    "sources/opononi-2028.csv": {
+      "bytes": 19545,
+      "sha256": "97d7c892d89b6e05939fa51dd1b5fb70745b3ccba4e90ffa9ad55d05a49a8c8e"
+    },
+    "sources/opononi-2029.csv": {
+      "bytes": 19491,
+      "sha256": "479c5075560f7cf52ec740baf4a102b4100dd1bd3772a4911b244442e0173ef5"
+    },
+    "sources/opotiki-wharf-2026.csv": {
+      "bytes": 19491,
+      "sha256": "fcc692ac00f590ee22fe258c6e4c6129da32cfb1b88947b8994fc82b011d7b23"
+    },
+    "sources/opotiki-wharf-2027.csv": {
+      "bytes": 19499,
+      "sha256": "dd9e972183ac864afa350ec79807bb052d91b6d021d791322880b116f9321f50"
+    },
+    "sources/opotiki-wharf-2028.csv": {
+      "bytes": 19545,
+      "sha256": "a67c9fba257be620fa3e2c15a1348937758cf89f4ec0a9fa719ad06eac829914"
+    },
+    "sources/opotiki-wharf-2029.csv": {
+      "bytes": 19499,
+      "sha256": "3e2b45168c41e0d592f3a501c60f9ba007fc4ab96413836bef53dd7c71c9f00b"
+    },
+    "sources/opua-2026.csv": {
+      "bytes": 19480,
+      "sha256": "2b51ba9c638b64d1a3f1b888b49dea424f939b6abf300e316b4046cfb514943d"
+    },
+    "sources/opua-2027.csv": {
+      "bytes": 19490,
+      "sha256": "0df39076cefd75ec6829d723922e02829ccd8e2c7c26c15cc3e094418e8ef387"
+    },
+    "sources/opua-2028.csv": {
+      "bytes": 19534,
+      "sha256": "784c9496aae081f11bfb55fcbb727cda9f1c398b42f42c4303a4af0f56764a58"
+    },
+    "sources/opua-2029.csv": {
+      "bytes": 19488,
+      "sha256": "81d2765654f3be5b8eb2a308b3faa5e4380f17705b23f1738651cb01ebbcc54a"
+    },
+    "sources/owenga-chatham-island-2026.csv": {
+      "bytes": 19457,
+      "sha256": "5f9a543a5a0009c662e3291a88768603a9657267b77cf74a923522a09b16bcb4"
+    },
+    "sources/owenga-chatham-island-2027.csv": {
+      "bytes": 19465,
+      "sha256": "b21bb89c122441303b221bcef1f9768ef8d145088b8747d4653466877eaeff1a"
+    },
+    "sources/owenga-chatham-island-2028.csv": {
+      "bytes": 19511,
+      "sha256": "bd1f9fd5db741b3ef5eff66b412a09544baeea3e147d5c57c129b5a4755b8cec"
+    },
+    "sources/owenga-chatham-island-2029.csv": {
+      "bytes": 19465,
+      "sha256": "f4c6ddf88ee42ae085878aab4adcf6f1c70c2a5560387748dd2fc27155fbbd43"
+    },
+    "sources/paratutae-island-2026.csv": {
+      "bytes": 19500,
+      "sha256": "8c7094cd9891fac223b00dcd06296144e7cd1e9072e37ec7a4180314a9e12608"
+    },
+    "sources/paratutae-island-2027.csv": {
+      "bytes": 19492,
+      "sha256": "29caec5b57d8d866851a32c6fe40f6e22323570090cd0a24f7777f397049eda4"
+    },
+    "sources/paratutae-island-2028.csv": {
+      "bytes": 19554,
+      "sha256": "4387869b9d42a8c145ce7e3cc4af742a5f84b1a82200db699fd9ae650181a90e"
+    },
+    "sources/paratutae-island-2029.csv": {
+      "bytes": 19494,
+      "sha256": "254ebba3e15ef665e2e5060d60ac457320348d6be6f9bfc547a8b8ac4cc75622"
+    },
+    "sources/picton-2026.csv": {
+      "bytes": 19490,
+      "sha256": "0accff76178939b7dcfb421eaf9e170a65c205fe59ea5fc817e705188d80af52"
+    },
+    "sources/picton-2027.csv": {
+      "bytes": 19482,
+      "sha256": "7bb50eb2872f4178df01432186b942f29571fd1d587c07a054e356a51aa4e2bf"
+    },
+    "sources/picton-2028.csv": {
+      "bytes": 19544,
+      "sha256": "c50194d24cbb1de12c9dee3ba8b3ca98e52c8a27b40e9b7014e69c742c30c1f7"
+    },
+    "sources/picton-2029.csv": {
+      "bytes": 19490,
+      "sha256": "3e88c6717d4ee2782e6e1c1fbb3cb7b491bbd6add976a0481bcd1344e098bf87"
+    },
+    "sources/port-chalmers-2026.csv": {
+      "bytes": 19497,
+      "sha256": "fff423068cfa1ce0574bebbee05a4944a2424ba21cadfb52f488cabcb273f692"
+    },
+    "sources/port-chalmers-2027.csv": {
+      "bytes": 19489,
+      "sha256": "453ffbdbd859deae2d08155a177d7d47bc9122f4cc2c23dcbc0445246cdb5ba6"
+    },
+    "sources/port-chalmers-2028.csv": {
+      "bytes": 19551,
+      "sha256": "b80aed60a471e0bd8e178924e69083f74fef8f588e6d7ca22283effe5a88ff20"
+    },
+    "sources/port-chalmers-2029.csv": {
+      "bytes": 19489,
+      "sha256": "2bf968082c7f000e085edefc4a2785dd2a3b358bf5c56ce366805df99fb13a27"
+    },
+    "sources/port-ohope-wharf-2026.csv": {
+      "bytes": 19493,
+      "sha256": "40c03422c048ac2628821f395cf59e5772f911499a35d3ce259efac9c8ee22ba"
+    },
+    "sources/port-ohope-wharf-2027.csv": {
+      "bytes": 19501,
+      "sha256": "2f62e0a74d516416382ad0dec0d88e4c10e240d1947555f47865be3a642d3be1"
+    },
+    "sources/port-ohope-wharf-2028.csv": {
+      "bytes": 19547,
+      "sha256": "7a6fe01e8d6757dc91b5d5e1d5d1b1c9102ecfcaa9b02c4b7eb757dcf578eaa3"
+    },
+    "sources/port-ohope-wharf-2029.csv": {
+      "bytes": 19501,
+      "sha256": "1937df8a1dcd2aa7c9d40dbaf616763c9d5e44be729df46a2dbddfed4cb0938d"
+    },
+    "sources/port-taranaki-2026.csv": {
+      "bytes": 19499,
+      "sha256": "7c6d0727bc305e457acc6fe8da70a03fba083186b0bc904c6418a62a5d1631c4"
+    },
+    "sources/port-taranaki-2027.csv": {
+      "bytes": 19489,
+      "sha256": "6e0561cbf8c7afecf5bc34b277c1ae0400152a90789f96af921dbc5b75bae3c0"
+    },
+    "sources/port-taranaki-2028.csv": {
+      "bytes": 19551,
+      "sha256": "fddf65e2ac4cc8c0cd565c012de1f50366693e90168326b772e6d46fe3679839"
+    },
+    "sources/port-taranaki-2029.csv": {
+      "bytes": 19489,
+      "sha256": "2a8dd5838012e25d307f5dda833fb6b6429892ff5f7e9dd8743521c7de202ecd"
+    },
+    "sources/pouto-point-2026.csv": {
+      "bytes": 19495,
+      "sha256": "270367448f428874684aaac235fe64c854019b83c3cc83d893302041506e4d91"
+    },
+    "sources/pouto-point-2027.csv": {
+      "bytes": 19487,
+      "sha256": "bec53cf4c7b3dc845ccd61e2566795858def867080a86e8ef7e32b141a3a75b9"
+    },
+    "sources/pouto-point-2028.csv": {
+      "bytes": 19549,
+      "sha256": "c4f01c5407a4c5fe9a22597bdcdb92cf14195a35809260c4df3e506795dc8ef7"
+    },
+    "sources/pouto-point-2029.csv": {
+      "bytes": 19487,
+      "sha256": "f7afc3f0ff4c4db3bf1677abdb5a5d7ef0c986c5381c024efb7562cbf41859ae"
+    },
+    "sources/raglan-2026.csv": {
+      "bytes": 19490,
+      "sha256": "dbe486d9934ac6bbed5e6e6c9fb6ed9683a529234baab1b8f989a06701986f4a"
+    },
+    "sources/raglan-2027.csv": {
+      "bytes": 19482,
+      "sha256": "b343a71f171cf507e2fac3bac7fa89e812f299fee202c8cef4faed7ab58166f7"
+    },
+    "sources/raglan-2028.csv": {
+      "bytes": 19545,
+      "sha256": "5c2431314d99eb25c4f73407981244ceb7d8e0e12f8a0c4c1da58451f6106615"
+    },
+    "sources/raglan-2029.csv": {
+      "bytes": 19485,
+      "sha256": "25d73e554e34968b126ae5dd58f4651cd95888f39f5b59d4a7de7ffd737e13dc"
+    },
+    "sources/rangatira-point-2026.csv": {
+      "bytes": 19459,
+      "sha256": "e99128ab39c061b5821d8a73c37df776e4dcfe63658d6abb8abd885918154811"
+    },
+    "sources/rangatira-point-2027.csv": {
+      "bytes": 19449,
+      "sha256": "9dcd916e00782684fe3be99e599a6f33705d748ec30363305cd7ea4bc3d04de0"
+    },
+    "sources/rangatira-point-2028.csv": {
+      "bytes": 19511,
+      "sha256": "8511129fe47d60210abbde3d8b21d147b7fb8711ad92de33c0598392b6d29e45"
+    },
+    "sources/rangatira-point-2029.csv": {
+      "bytes": 19451,
+      "sha256": "38d9bb85ef4c7e786891c879d8099fb20726587769287a2f053013ac37659de4"
+    },
+    "sources/rangitaiki-river-entrance-2026.csv": {
+      "bytes": 19450,
+      "sha256": "bcfff5e83dd0a49f13bfab1519bb257ac2529f98e87e6400e627c3b1fb249b58"
+    },
+    "sources/rangitaiki-river-entrance-2027.csv": {
+      "bytes": 19458,
+      "sha256": "a78c5b82f62776fbb0680c79c0244d0ad13d11fe098e7c0a976bf12e751e6c5a"
+    },
+    "sources/rangitaiki-river-entrance-2028.csv": {
+      "bytes": 19504,
+      "sha256": "b50f39798bbb89afbc2abff99b09a49e14bbd77cf228a395789325dc06d5926d"
+    },
+    "sources/rangitaiki-river-entrance-2029.csv": {
+      "bytes": 19458,
+      "sha256": "489f613b8be63314aa7f53b3d1b8a14557896895951d9c9553ee3d91a24246f9"
+    },
+    "sources/richmond-bay-2026.csv": {
+      "bytes": 19460,
+      "sha256": "6dfb4fae7712aac1eed081fd9eae2def593d81fde241a9b95e51c8081637006a"
+    },
+    "sources/richmond-bay-2027.csv": {
+      "bytes": 19450,
+      "sha256": "a44493954065e7d79156cddfbddfcbefb3b4284677793199aa0efa2dabb6bd34"
+    },
+    "sources/richmond-bay-2028.csv": {
+      "bytes": 19512,
+      "sha256": "f7b4fba938b9f8473c864bc14d92dd0737b880b4078eca59bd764c2d4bdc47ab"
+    },
+    "sources/richmond-bay-2029.csv": {
+      "bytes": 19450,
+      "sha256": "48d6305e98933b4bb0739529009e5169a8514856d168a9839f2a9d6ffc897b02"
+    },
+    "sources/riverton-aparima-2026.csv": {
+      "bytes": 19494,
+      "sha256": "eccd11ce6ba3d266e66a065ebedf5bf77ac787ac442be19d014127001a3c88a8"
+    },
+    "sources/riverton-aparima-2027.csv": {
+      "bytes": 19504,
+      "sha256": "8ec631934f22e067d010308d99c1e04980a08ff7b4f6ba6940566b6ca567a435"
+    },
+    "sources/riverton-aparima-2028.csv": {
+      "bytes": 19548,
+      "sha256": "3921e7fcc358386af5aa2104d132b4baebb10bcd1237db187984974c39b36966"
+    },
+    "sources/riverton-aparima-2029.csv": {
+      "bytes": 19502,
+      "sha256": "b2403dfc8ed65258e1292077424ebb4d5c2958398d42be0d392ea84eeb50e037"
+    },
+    "sources/scott-base-2026.csv": {
+      "bytes": 14652,
+      "sha256": "b9587de5bd86d2c6252f58dd0d5b8bd4a79e746b17fd4158896f44002a77389a"
+    },
+    "sources/scott-base-2027.csv": {
+      "bytes": 14676,
+      "sha256": "253579a6bde5568da48136a2c948bb70ab34e1f4fa4b87ed34d62bd5a729cf8a"
+    },
+    "sources/scott-base-2028.csv": {
+      "bytes": 14750,
+      "sha256": "322caac2e012ccf9536bd5a6fd270db3516051fa4a34b08cf81ee92ea4f3eec3"
+    },
+    "sources/scott-base-2029.csv": {
+      "bytes": 14626,
+      "sha256": "d9452a3673beb0c29b6ce7e46e5951cd5457f3452aae81371d7c8b415944f2a3"
+    },
+    "sources/secondary.csv": {
+      "bytes": 35577,
+      "sha256": "59a2bb8e8a2425061b9207749a09950ad82f5414888d579d1f1552b5b5d0ba1a"
+    },
+    "sources/spit-wharf-2026.csv": {
+      "bytes": 19496,
+      "sha256": "13735752dbeca4ce830e48bfcba3bf5cb2f308e9ab5bd4003ac0754d982853d2"
+    },
+    "sources/spit-wharf-2027.csv": {
+      "bytes": 19486,
+      "sha256": "c685f1d0c053bfcb41bb851f7f19a6edc3c1e70ec87fddd2c563ac9af265f92e"
+    },
+    "sources/spit-wharf-2028.csv": {
+      "bytes": 19548,
+      "sha256": "7f9b62eacce50a0334e473e95207e5b84281d14d774963adca6226e6b1803436"
+    },
+    "sources/spit-wharf-2029.csv": {
+      "bytes": 19486,
+      "sha256": "2f44fb0143ce82e9b41d2558c93d5fe8641b8a6d6138bd8b6301324b32dc6681"
+    },
+    "sources/sumner-head-2026.csv": {
+      "bytes": 19445,
+      "sha256": "7df21d1561140a6fd52e42b328661b4ea580c9d033abbf58ed0d3d2527bdbbae"
+    },
+    "sources/sumner-head-2027.csv": {
+      "bytes": 19453,
+      "sha256": "013f12223ee1568f910363a54f10d1dc5976f97e84c1614ac7c55f90c90e1812"
+    },
+    "sources/sumner-head-2028.csv": {
+      "bytes": 19507,
+      "sha256": "f570648dc2917f572689b9dbd30fc2813e28f068635cb9981478e30f82a055f9"
+    },
+    "sources/sumner-head-2029.csv": {
+      "bytes": 19445,
+      "sha256": "83743a9e86f6b5e2743f40bd75fde77b04f50f68c0364bb6fcd7a5a1a337ae1c"
+    },
+    "sources/tamaki-river-2026.csv": {
+      "bytes": 19451,
+      "sha256": "612745fa9fedb39b7926856acbd0117ab25a3ec40d339ba4560bdaf857dff3f3"
+    },
+    "sources/tamaki-river-2027.csv": {
+      "bytes": 19461,
+      "sha256": "e509cd390467a3fcdf4d48ff0d586372dbd1b89db907c238900bab8b2dc2238e"
+    },
+    "sources/tamaki-river-2028.csv": {
+      "bytes": 19505,
+      "sha256": "c156d5491a20791b58a61e82f34574947d9f091e354c6365ebf2f3cc4e12ee92"
+    },
+    "sources/tamaki-river-2029.csv": {
+      "bytes": 19459,
+      "sha256": "0973673a4ebda582ff0aa92ee923498c28c950133c2509089cb91426cf74e21c"
+    },
+    "sources/tarakohe-2026.csv": {
+      "bytes": 19494,
+      "sha256": "d69ae61ba2a6117060b5342346fd398a79d669045aefda57528379526a531b0c"
+    },
+    "sources/tarakohe-2027.csv": {
+      "bytes": 19484,
+      "sha256": "6e039d07ccb3bed73bdb8b9b6a4b3b00a1809d2a3ac9ae101160426de9b0d6cc"
+    },
+    "sources/tarakohe-2028.csv": {
+      "bytes": 19546,
+      "sha256": "c15600a76c8d4990c1d330f51d95cf0068a7d623e09930af761fb91be1cbc42f"
+    },
+    "sources/tarakohe-2029.csv": {
+      "bytes": 19484,
+      "sha256": "501f0037cff235501123c2653139a4efffe853cad56dcce255157da64ce505a3"
+    },
+    "sources/tauranga-2026.csv": {
+      "bytes": 19484,
+      "sha256": "dd874afc0f7794a0f1b47ba207ba2ccf38e9ec395bf72e70ba96647fb5846f3c"
+    },
+    "sources/tauranga-2027.csv": {
+      "bytes": 19492,
+      "sha256": "102f560a0f8987b20d98c35fac597efd21d50e801587981f9138d4b7d383b9fe"
+    },
+    "sources/tauranga-2028.csv": {
+      "bytes": 19538,
+      "sha256": "cf0beca39ab79d1d634339ad63814f13276389456d415ad4ec9a8184db31ead7"
+    },
+    "sources/tauranga-2029.csv": {
+      "bytes": 19492,
+      "sha256": "ca388aa62d5aa6a9de9eaab11617032f0ac6e42cc0fdc9201f17bf1543b0d152"
+    },
+    "sources/te-weka-bay-2026.csv": {
+      "bytes": 19495,
+      "sha256": "10fc054a22e6ab758948e2f19ef158af26c53be2c95a9027a64445a8d1466376"
+    },
+    "sources/te-weka-bay-2027.csv": {
+      "bytes": 19449,
+      "sha256": "6512921a88ef8068856b6b78a1ddce67b083afcf069ac505304f7d25435e095a"
+    },
+    "sources/te-weka-bay-2028.csv": {
+      "bytes": 19511,
+      "sha256": "804fdec78238fd13428ca62acdc952028102b9d548339b337e4f35a58ab1be73"
+    },
+    "sources/te-weka-bay-2029.csv": {
+      "bytes": 19457,
+      "sha256": "74a6af76b1e8d0cc1be62d6b6c668403195b2f2105aa8fdeed30e14d3014750b"
+    },
+    "sources/thames-2026.csv": {
+      "bytes": 19482,
+      "sha256": "651784bb468f41920c95d97a7285c2f761d54ff5cdde64cdd4c05a14a2e5bad2"
+    },
+    "sources/thames-2027.csv": {
+      "bytes": 19490,
+      "sha256": "8d76eb39cee276712af7193551879ffe15973e4146204e305206c6a06066f93a"
+    },
+    "sources/thames-2028.csv": {
+      "bytes": 19536,
+      "sha256": "d612b5007bb24b347aa6ab59880306d57739c7f1fa34182485cdd5c5e746ad2f"
+    },
+    "sources/thames-2029.csv": {
+      "bytes": 19490,
+      "sha256": "c096787368a3e43414df49931f3d632e8892bb79315c85c52ea664f53d9bc638"
+    },
+    "sources/timaru-2026.csv": {
+      "bytes": 19492,
+      "sha256": "b8596d37ce05982815230db9ea19e9ef2e1c410d33bdf646f2588b93426df810"
+    },
+    "sources/timaru-2027.csv": {
+      "bytes": 19482,
+      "sha256": "7a3cfc2d5c1e012c34a56c776f1f2a3b10f55bf7a5af83ab4bf130ed69dd95b9"
+    },
+    "sources/timaru-2028.csv": {
+      "bytes": 19544,
+      "sha256": "aca6dc6aa61a3f1fc821035efa3f8233c3320f4704927866d4b890a2830b8a19"
+    },
+    "sources/timaru-2029.csv": {
+      "bytes": 19482,
+      "sha256": "1261e83d1582df4ee882829164b2fcfedbf55750c46186339167f6aba5cb8b76"
+    },
+    "sources/town-basin-2026.csv": {
+      "bytes": 19464,
+      "sha256": "c92ac7327392a6d69440729b9e1b76bfc833c51cd779cd506e26e3d81f930540"
+    },
+    "sources/town-basin-2027.csv": {
+      "bytes": 19464,
+      "sha256": "d9305532b4f2fd6f998ed2c508d02d2e8e6a856c52e4ec59559e4a34a30547e0"
+    },
+    "sources/town-basin-2028.csv": {
+      "bytes": 19510,
+      "sha256": "bc38575771897889fa7200d03916637a3e1a91749c34e9c04f492c2cf35e9567"
+    },
+    "sources/town-basin-2029.csv": {
+      "bytes": 19464,
+      "sha256": "a70c3df0f19726c2ebc159a3a7a4c6832dd9b5ba14035b6cea5834330ff17711"
+    },
+    "sources/waihopai-river-entrance-2026.csv": {
+      "bytes": 19507,
+      "sha256": "b5b4bb8611fdc320c37bb03a9e9a9612d9725a1069273da6c94a52a46d1c9e6c"
+    },
+    "sources/waihopai-river-entrance-2027.csv": {
+      "bytes": 19499,
+      "sha256": "69fcaa7d5a29bb83225ae337c423ff02ac5191cfa7c2018769eadb51c07150fb"
+    },
+    "sources/waihopai-river-entrance-2028.csv": {
+      "bytes": 19561,
+      "sha256": "9b9e64e138e4553e183e4fec5c3b62193ebaf1cf2251be603c411d4cb05b5c9c"
+    },
+    "sources/waihopai-river-entrance-2029.csv": {
+      "bytes": 19507,
+      "sha256": "67738cb72dd6cce27949e8f91fd08c5c66ab6e81ebf4738aaa62fc819feacee5"
+    },
+    "sources/waitangi-chatham-island-2026.csv": {
+      "bytes": 19501,
+      "sha256": "a4518069c3fd109ea5fa7cf02d1897245404293f04187ce943388cc0eead0d36"
+    },
+    "sources/waitangi-chatham-island-2027.csv": {
+      "bytes": 19509,
+      "sha256": "5231b8d5bf1f35040e6ba6fc04bc27e61ecc65395fcf2558551763f251e08c85"
+    },
+    "sources/waitangi-chatham-island-2028.csv": {
+      "bytes": 19555,
+      "sha256": "97253d96c2ca9ab41a3e1588a575ab3e1f937bfdfa9b4b58cc41c2934ee8305b"
+    },
+    "sources/waitangi-chatham-island-2029.csv": {
+      "bytes": 19509,
+      "sha256": "11278bcdd4686c916d70bfe5b7f1679231240ddbf4f87049b5338bf802bb259a"
+    },
+    "sources/weiti-river-entrance-2026.csv": {
+      "bytes": 19496,
+      "sha256": "9f54473aff6fe0f70f3ee4725c3d4d0948762ebce037f31541ace5da174be25a"
+    },
+    "sources/weiti-river-entrance-2027.csv": {
+      "bytes": 19506,
+      "sha256": "da5bc35db53551e1e69e9267fdbf20883cd8b29f45d76b35d4f9a9dbe8d27a35"
+    },
+    "sources/weiti-river-entrance-2028.csv": {
+      "bytes": 19550,
+      "sha256": "187a19575f4d33c45db8281cbc04575aec78e984dbd58c3feb4891059d5ee839"
+    },
+    "sources/weiti-river-entrance-2029.csv": {
+      "bytes": 19504,
+      "sha256": "d934e5bacfddcd9f5c3461db3c3e326e1a57e555dd09fdfe5c79cd27b3297606"
+    },
+    "sources/welcombe-bay-2026.csv": {
+      "bytes": 19446,
+      "sha256": "b3895526cc7e83d192bfd04e4697eaf91583a78f35512d7dc9953c6d4eb36015"
+    },
+    "sources/welcombe-bay-2027.csv": {
+      "bytes": 19454,
+      "sha256": "25e7574f0b245cc7a01b515d56694a648d530d95e820932c7525008f0c046185"
+    },
+    "sources/welcombe-bay-2028.csv": {
+      "bytes": 19500,
+      "sha256": "9ce7057a04e32c18a20c369f2479ddd097c5bf473a0d9bfad32e6528490cced0"
+    },
+    "sources/welcombe-bay-2029.csv": {
+      "bytes": 19454,
+      "sha256": "6c33500da5bbc9935ba8e79cf3c4e6c555213a58c1ef034e1e8416cb3d706b3f"
+    },
+    "sources/wellington-2026.csv": {
+      "bytes": 19486,
+      "sha256": "67c6d792b48bd08a284b742c1c341987e85da7fdf44020b4111cc33c2bbb7e95"
+    },
+    "sources/wellington-2027.csv": {
+      "bytes": 19494,
+      "sha256": "625a05eeb5a3bba8837f23461fe729bffd2c6ff27e9e5bebc5acc805d3144971"
+    },
+    "sources/wellington-2028.csv": {
+      "bytes": 19548,
+      "sha256": "c220eb6d4d7f1dfdf7afe42a213cf2a38a31a93cd1f4e6031c09c00286a37e01"
+    },
+    "sources/wellington-2029.csv": {
+      "bytes": 19486,
+      "sha256": "d9333c80b98865dea7530ce71eef72409188063a4b7a98a2fe9f66e9f095a299"
+    },
+    "sources/westport-2026.csv": {
+      "bytes": 19484,
+      "sha256": "a163fb2de3f478973f5c8bcc91422451f1fdb29721f2497f4d0fe91780f29f0a"
+    },
+    "sources/westport-2027.csv": {
+      "bytes": 19492,
+      "sha256": "18d982006b8199098a68aab1a23eba3dcd2836369c6a86bad6aed8833d01fea7"
+    },
+    "sources/westport-2028.csv": {
+      "bytes": 19546,
+      "sha256": "376820d6a03c43e48bf21f9867d34d3568c7d5a939978fc4ac830535d72e5b1d"
+    },
+    "sources/westport-2029.csv": {
+      "bytes": 19484,
+      "sha256": "8dc4efe5874dad3739ab449af8a0137db2cefee4296a94cb248daab2347b5f7d"
+    },
+    "sources/whakatane-2026.csv": {
+      "bytes": 19486,
+      "sha256": "8bf88733ec05b0517f1b64488eff4c8f29373d859f865a1b5c55c269b62a9f19"
+    },
+    "sources/whakatane-2027.csv": {
+      "bytes": 19494,
+      "sha256": "04890dbba0540181c95718910d27a63cc89477bc9a795eddd9c580310728b26f"
+    },
+    "sources/whakatane-2028.csv": {
+      "bytes": 19540,
+      "sha256": "ac2e0debea51f7e5a78350dd4c1727a933af82a3f0f74c30c0cc6a8658b03a51"
+    },
+    "sources/whakatane-2029.csv": {
+      "bytes": 19494,
+      "sha256": "e4d439b676c96c878dcee47698fa40d4d3e5039979d5f37d7623e007648fecea"
+    },
+    "sources/whanganui-river-entrance-2026.csv": {
+      "bytes": 19508,
+      "sha256": "ee80889359c9d9af00773d6c2699d039276be9a624c21eb53a1de657b964e4f5"
+    },
+    "sources/whanganui-river-entrance-2027.csv": {
+      "bytes": 19500,
+      "sha256": "8ab80500ef918008a5e794fdb1875a12404cfc55672718dcae352191142b0bd6"
+    },
+    "sources/whanganui-river-entrance-2028.csv": {
+      "bytes": 19562,
+      "sha256": "d17e3d79d293b5de5a7ae9775299e74140771a187e5e7fa6fec8e8a8487d7e56"
+    },
+    "sources/whanganui-river-entrance-2029.csv": {
+      "bytes": 19502,
+      "sha256": "b35b15dfac3362e71dcbd8a3c2925d67444e581c922f7765ea6657ceb2989cd9"
+    },
+    "sources/whangarei-2026.csv": {
+      "bytes": 19483,
+      "sha256": "1f05e6eeffec1c4b1557fd37684984e0030031fbaf301881dc3f3cbb104f2802"
+    },
+    "sources/whangarei-2027.csv": {
+      "bytes": 19494,
+      "sha256": "144689f94b7ed1fee7f8c0d2a166c512f142c4dbd04ed3deaff368262e941150"
+    },
+    "sources/whangarei-2028.csv": {
+      "bytes": 19540,
+      "sha256": "adac406ce9bc3f191530bc5fc76cc4c56f1b36b7641aea8cc9cf59bbb30b95c8"
+    },
+    "sources/whangarei-2029.csv": {
+      "bytes": 19494,
+      "sha256": "2d197984eb756b13efa3cc6ffc6cbdddf4bf490fa278e8eb1a255b86e67411b7"
+    },
+    "sources/whangaroa-2026.csv": {
+      "bytes": 19443,
+      "sha256": "d7b303968caa03af32a3c6b02c2b273eec8ab6aa210b539dcbe9a91d2462972a"
+    },
+    "sources/whangaroa-2027.csv": {
+      "bytes": 19451,
+      "sha256": "4848c37444d91fb47d077a9766686c6e3d966ad76f2a28a7fbeff5388a593421"
+    },
+    "sources/whangaroa-2028.csv": {
+      "bytes": 19497,
+      "sha256": "706b7c91febfff6bd02218bef2d6732365ef91311406f80db7957e891eb2d36d"
+    },
+    "sources/whangaroa-2029.csv": {
+      "bytes": 19451,
+      "sha256": "db201cd0e1ad139ec77a7205340b99568f9278923e653e7df97ff44506525610"
+    },
+    "sources/whitianga-2026.csv": {
+      "bytes": 19485,
+      "sha256": "aa6bae6ce4a739f7811f1338640743da8f6bfc9f0b894480065cd8444b74af08"
+    },
+    "sources/whitianga-2027.csv": {
+      "bytes": 19493,
+      "sha256": "0a01f5e63a977a581d6f10db75e2c9bad8b2e1dca46beb8c2b03ae9c38dfdd28"
+    },
+    "sources/whitianga-2028.csv": {
+      "bytes": 19539,
+      "sha256": "bd7e73830d23675b58bbecc444de96e6f950a052f03e648098a55e6922a626f2"
+    },
+    "sources/whitianga-2029.csv": {
+      "bytes": 19493,
+      "sha256": "5d52bad2104809ea1985241e8f2e8d197c367464946b00deae4e469736ddbb98"
+    },
+    "sources/wilson-bay-2026.csv": {
+      "bytes": 19496,
+      "sha256": "19e6afa52df4c06c5bb00d2ba0344a3a34ed508623be9718342a7506ec5f2cc6"
+    },
+    "sources/wilson-bay-2027.csv": {
+      "bytes": 19486,
+      "sha256": "eeae5f6cab9924e58614407b6bd24fbc2ac6bf6edc305d85d703894ef55fe5c0"
+    },
+    "sources/wilson-bay-2028.csv": {
+      "bytes": 19548,
+      "sha256": "f3137697ad3290b43e55dc5bb80ceb63046f36cbb0795c7dc9914fc23b8aa094"
+    },
+    "sources/wilson-bay-2029.csv": {
+      "bytes": 19486,
+      "sha256": "a704c2cb45c8cf8af5c6b55f0747320676a07ab318a011120a170936cd31eaaa"
+    },
+    "sources/catalogue.json": {
+      "bytes": 68966,
+      "sha256": "9549d85d95c4f73219d6b0b061fe73a19d924ff43ef3551742c387639b115ada"
+    },
+    "sources/provenance.json": {
+      "bytes": 141879,
+      "sha256": "1639eb96029bd0165d0b3463d1932813680ea2c91c02ca66943b267a0add274e"
+    }
+  }
+}

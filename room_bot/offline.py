@@ -11,6 +11,8 @@ from .routing import RoutingError
 
 
 def install_offline_commands(dispatcher, data_path):
+    from .tide_service import TideService
+    national_tides = TideService(data_path, dispatcher.config.tides)
     router = None
     if dispatcher.config.routing.backend == 'routino':
         from .routing import RoutinoRouter
@@ -52,6 +54,8 @@ def install_offline_commands(dispatcher, data_path):
     def geographic(verb, ctx, args):
         details=[]
         dispatcher.remember_details(ctx.post.author,[])
+        if verb == 'tides' and (data_path/'tides.sqlite3').exists():
+            return national_tides.reply(args, ctx.clock)
         path = data_path / 'offline.sqlite3'
         if not path.exists():
             return ('Drinking-water safety unknown. Do not assume safe to drink. ' if verb=='water' else '')+'No offline place data installed. Ask the operator to import it.'
