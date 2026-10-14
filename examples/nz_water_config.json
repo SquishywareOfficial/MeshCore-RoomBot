@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "enabled_commands": ["ping", "help", "about", "place", "distance", "water", "source", "details"],
+  "data_dir": "../routing-validation-data",
+  "routing": {
+    "backend": "routino",
+    "graph_dir": "/home/sysop/meshcore-routing-lab/nz-20261011-foot-v1-complete",
+    "executable": "/home/sysop/meshcore-routing-lab/routino-3.4.4/src/router-slim",
+    "precise_snap_metres": 100
+  },
+  "water": {
+    "radius_metres": 5000,
+    "candidate_limit": 12,
+    "scan_limit": 20000,
+    "route_budget_seconds": 30
+  }
+}

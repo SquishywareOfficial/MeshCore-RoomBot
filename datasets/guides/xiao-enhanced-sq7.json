@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "dataset": {
+    "id": "xiao-enhanced-guides-sq7",
+    "kind": "guide",
+    "title": "Squishyware MeshCore Enhanced original XIAO S3 + Wio SX1262 guides",
+    "source_url": "https://github.com/SquishywareOfficial/MeshCore-Enhanced/tree/ca22c37b96448d8626e1731ed476dd529bb08f26",
+    "license": "MIT; firmware license and copyright notices retained at repository license.txt.",
+    "revision": "ca22c37b96448d8626e1731ed476dd529bb08f26; reviewed 2026-10-13",
+    "retrieved_at": "2026-10-12T21:50:07.378906+00:00",
+    "coverage": "Original XIAO ESP32-S3 Wio SX1262 Enhanced repeater/room admin CLI; not arbitrary boards or upstream firmware; sources variants/xiao_s3_wio/README.md and src/helpers/CommonCLI.cpp"
+  },
+  "records": [
+    {
+      "id": "battery-sense",
+      "title": "Enhanced XIAO battery sensing",
+      "topics": [
+        "battery",
+        "voltage",
+        "divider",
+        "gpio"
+      ],
+      "text": "This setting enables an external ADC divider, not the battery charger. Default sense pin is D0/GPIO1. With correctly installed divider: set battery.connected on. Inspect with get battery.connected, get battery.gpio and get adc.multiplier. Disable before changing the pin; set battery.gpio default selects D0. Default divider multiplier is 2.000. Use the exact board wiring guide and confirm the midpoint voltage before connection."
+    },
+    {
+      "id": "dht11",
+      "title": "Enhanced XIAO DHT11 module",
+      "topics": [
+        "dht11",
+        "temperature",
+        "humidity",
+        "environment"
+      ],
+      "text": "For the supported 3-pin DHT11 module on this XIAO repeater/room: signal D1/GPIO2, supply 3V3, common GND. Disconnect power before wiring. Admin console: set environment.sensor none; set environment.gpio 2; set environment.sensor dht11. Wait at least 2 seconds, then get environment. Check module pin labels and the source guide; this does not describe bare 4-pin sensor wiring."
+    },
+    {
+      "id": "powersaving",
+      "title": "Enhanced ESP32 repeater power-saving commands",
+      "topics": [
+        "power",
+        "sleep",
+        "powersaving",
+        "repeater"
+      ],
+      "text": "Authenticated repeater console: powersaving on. Inspect with powersaving, disable with powersaving off. ESP32 sleep becomes eligible after 2 minutes of uptime. LoRa remains listening. Native USB can become unavailable during sleep. These commands are console guidance; requesting this guide does not change a device setting."
+    }
+  ]
+}

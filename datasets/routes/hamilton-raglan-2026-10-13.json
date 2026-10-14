@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "dataset": {
+    "id": "route-pair-linz-nzgb:22102-linz-nzgb:37717",
+    "kind": "routes",
+    "title": "OpenStreetMap contributors / Valhalla FOSSGIS route estimates",
+    "source_url": "https://valhalla.openstreetmap.de/",
+    "license": "OpenStreetMap-derived route data, ODbL 1.0; https://www.openstreetmap.org/copyright . LINZ endpoint coordinates CC BY 4.0.",
+    "revision": "Prepared 2026-10-12T21:33:41.960395+00:00; underlying OSM data revision not exposed",
+    "retrieved_at": "2026-10-12T21:33:41.960395+00:00",
+    "coverage": "Hamilton<->Raglan, pedestrian and driving; Gazetteer representative points snapped by router. Map-derived estimates, not field-verified routes."
+  },
+  "records": [
+    {
+      "id": "linz-nzgb:22102-linz-nzgb:37717-walk",
+      "origin": "linz-nzgb:22102",
+      "destination": "linz-nzgb:37717",
+      "mode": "walk",
+      "distance_m": 45313,
+      "origin_label": "Hamilton representative point, router-snapped",
+      "destination_label": "Raglan representative point, router-snapped",
+      "profile": "Valhalla pedestrian / OpenStreetMap snapshot",
+      "summary": "Map-derived route; no safety/closure check. Major named roads: Willoughby Street, 9, Dinsdale roundabout, SH 23, Whatawhata Road, Newcastle Road, Taotahi Avenue, Main Road",
+      "waypoints": [
+        "Willoughby Street",
+        "9",
+        "Dinsdale roundabout",
+        "SH 23",
+        "Whatawhata Road",
+        "Newcastle Road",
+        "Taotahi Avenue",
+        "Main Road",
+        "Bow Street"
+      ]
+    },
+    {
+      "id": "linz-nzgb:22102-linz-nzgb:37717-road",
+      "origin": "linz-nzgb:22102",
+      "destination": "linz-nzgb:37717",
+      "mode": "road",
+      "distance_m": 45299,
+      "origin_label": "Hamilton representative point, router-snapped",
+      "destination_label": "Raglan representative point, router-snapped",
+      "profile": "Valhalla auto / OpenStreetMap snapshot",
+      "summary": "Map-derived route; no safety/closure check. Major named roads: Willoughby Street, 9, Dinsdale roundabout, Whatawhata Road, SH 23, James Street",
+      "waypoints": [
+        "Willoughby Street",
+        "9",
+        "Dinsdale roundabout",
+        "Whatawhata Road",
+        "SH 23",
+        "James Street"
+      ]
+    },
+    {
+      "id": "linz-nzgb:37717-linz-nzgb:22102-walk",
+      "origin": "linz-nzgb:37717",
+      "destination": "linz-nzgb:22102",
+      "mode": "walk",
+      "distance_m": 45250,
+      "origin_label": "Raglan representative point, router-snapped",
+      "destination_label": "Hamilton representative point, router-snapped",
+      "profile": "Valhalla pedestrian / OpenStreetMap snapshot",
+      "summary": "Map-derived route; no safety/closure check. Major named roads: Bow Street, Main Road, SH 23, Whatawhata Road, Dinsdale roundabout, Massey Street, 9, Willoughby Street",
+      "waypoints": [
+        "Bow Street",
+        "Main Road",
+        "SH 23",
+        "Whatawhata Road",
+        "Dinsdale roundabout",
+        "Massey Street",
+        "9",
+        "Willoughby Street"
+      ]
+    },
+    {
+      "id": "linz-nzgb:37717-linz-nzgb:22102-road",
+      "origin": "linz-nzgb:37717",
+      "destination": "linz-nzgb:22102",
+      "mode": "road",
+      "distance_m": 45320,
+      "origin_label": "Raglan representative point, router-snapped",
+      "destination_label": "Hamilton representative point, router-snapped",
+      "profile": "Valhalla auto / OpenStreetMap snapshot",
+      "summary": "Map-derived route; no safety/closure check. Major named roads: James Street, Park Drive, Long Street, Main Road, Dinsdale roundabout, Massey Street, SH 23, Willoughby Street",
+      "waypoints": [
+        "James Street",
+        "Park Drive",
+        "Long Street",
+        "Main Road",
+        "Dinsdale roundabout",
+        "Massey Street",
+        "SH 23",
+        "Willoughby Street"
+      ]
+    }
+  ]
+}

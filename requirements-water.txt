@@ -1,0 +1,2 @@
+# Optional on-demand water lookup; no pyosmium/PBF processing on the Pi.
+shapely>=2.0,<3

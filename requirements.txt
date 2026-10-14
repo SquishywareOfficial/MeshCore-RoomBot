@@ -1,0 +1,4 @@
+pyserial>=3.5,<4
+tzdata>=2025.2
+# Offline magnetic compass bearings; includes pinned WMM2025 coefficients.
+pygeomag==1.1.0

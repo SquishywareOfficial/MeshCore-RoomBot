@@ -1,0 +1,106 @@
+{
+  "format_version": 1,
+  "dataset": {
+    "id": "linz-tides-raglan-2027-01-01-2027-01-03",
+    "kind": "tides",
+    "title": "Toitū Te Whenua Land Information New Zealand tide predictions",
+    "source_url": "https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan%202027.csv",
+    "license": "Based on LINZ data licensed for reuse under CC BY 4.0; https://www.linz.govt.nz/copyright",
+    "revision": "2027 table; Based on constituent set with reference date:,01-Jul-2016",
+    "retrieved_at": "2026-10-12T21:43:02.893918+00:00",
+    "coverage": "Raglan, 2027-01-01..2027-01-03; published local standard/daylight times; prediction heights only. Datum not stated in CSV.",
+    "timezone": "Pacific/Auckland",
+    "coverage_start": "2027-01-01",
+    "coverage_end": "2027-01-03"
+  },
+  "records": [
+    {
+      "id": "Raglan-2027-01-01T05:32:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-01T05:32:00+13:00",
+      "event": "high",
+      "height_m": 2.7,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-01T11:27:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-01T11:27:00+13:00",
+      "event": "low",
+      "height_m": 1.0,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-01T17:58:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-01T17:58:00+13:00",
+      "event": "high",
+      "height_m": 2.8,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-01T23:59:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-01T23:59:00+13:00",
+      "event": "low",
+      "height_m": 0.9,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-02T06:35:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-02T06:35:00+13:00",
+      "event": "high",
+      "height_m": 2.7,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-02T12:35:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-02T12:35:00+13:00",
+      "event": "low",
+      "height_m": 1.0,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-02T18:59:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-02T18:59:00+13:00",
+      "event": "high",
+      "height_m": 2.7,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-03T01:03:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-03T01:03:00+13:00",
+      "event": "low",
+      "height_m": 0.9,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-03T07:37:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-03T07:37:00+13:00",
+      "event": "high",
+      "height_m": 2.7,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-03T13:42:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-03T13:42:00+13:00",
+      "event": "low",
+      "height_m": 1.0,
+      "datum": "Source CSV datum not specified"
+    },
+    {
+      "id": "Raglan-2027-01-03T19:58:00+13:00",
+      "place_name": "Raglan",
+      "time": "2027-01-03T19:58:00+13:00",
+      "event": "high",
+      "height_m": 2.7,
+      "datum": "Source CSV datum not specified"
+    }
+  ]
+}

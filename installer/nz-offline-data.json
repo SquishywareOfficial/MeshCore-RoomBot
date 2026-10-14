@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "id": "nz-20261011-v2",
+  "prepared_at": "2026-10-13T17:38:08.437960+00:00",
+  "platform": "64-bit little-endian Linux; graph tested on x86_64 and aarch64",
+  "archive": {
+    "url": "https://github.com/SquishywareOfficial/MeshCore-RoomBot/releases/download/nz-data-20261011-v2/nz-20261011-v2.zip",
+    "bytes": 361927085,
+    "sha256": "63abbac1b2c021cd1d1a84a89509a69ebd03b6f229effc228a40fdf60eee930f"
+  },
+  "files": {
+    "MAP-NOTICES.md": {
+      "bytes": 938,
+      "sha256": "8aff8da96a25ec97db0f5f5e3fe93de89303df687c6d596487eacf1c881158f6"
+    },
+    "routing/nz/COPYING-Routino": {
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    "routing/nz/manifest.json": {
+      "bytes": 1897,
+      "sha256": "73d33ad765748cf92e9f4b0823ae7b2a0d6c4c2aa57ff289c6fb81ee7f1ea968"
+    },
+    "routing/nz/nodes.mem": {
+      "bytes": 53100120,
+      "sha256": "e00e1e31911945e87c9bde8d83605122e78894d38a761bd1181145320799104a"
+    },
+    "routing/nz/profiles.xml": {
+      "bytes": 2606,
+      "sha256": "6b2d176ff17c6d96d0d435ad1136e21770b9c36f4168ed0da89836c3123ee47f"
+    },
+    "routing/nz/relations.mem": {
+      "bytes": 1204,
+      "sha256": "c9007ce736dbf885ea89e55af2477a7af65bdc520eec7252e1595461e05c4b43"
+    },
+    "routing/nz/segments.mem": {
+      "bytes": 82718952,
+      "sha256": "6d50972533ea995b567eeec8e82ead2d5a75befcdb05431497df8ec0e1e88184"
+    },
+    "routing/nz/tagging.xml": {
+      "bytes": 44662,
+      "sha256": "eb975b39523844caf77494ea12765390f8ceee7c41a1e5246ee4d84995f2a03e"
+    },
+    "routing/nz/translations.xml": {
+      "bytes": 57661,
+      "sha256": "2bd9875582cd2c3a2722e3d3a9bf9b45909b357f62e5cfd3ae77276473482fa3"
+    },
+    "routing/nz/ways.mem": {
+      "bytes": 2561106,
+      "sha256": "0df91704e978af7c2de3598a42cad77be4662cc59a0bcd75ccee18373f74c0a6"
+    },
+    "streets.sqlite3": {
+      "bytes": 191762432,
+      "sha256": "461196aa95a74dfce645d634f489a92e89b2d0b3d39fd367f6ca7141f876aa8b"
+    },
+    "water.sqlite3": {
+      "bytes": 407425024,
+      "sha256": "3667cf3142f9b507dea56bf3cfd4e046eef00f4c7e3c2d562851d3c1aa61c97d"
+    }
+  },
+  "sources": {
+    "streets": {
+      "title": "OpenStreetMap named road/path components",
+      "source_url": "https://download.geofabrik.de/australia-oceania/new-zealand-261011.osm.pbf",
+      "revision": "geofabrik-nz-2026-10-11",
+      "source_sha256": "18412e3bf7e6a2a7eb96fa67d159f786f224104c9f8202a07e722c49aa28dde1",
+      "retrieved_at": "2026-10-12T23:26:53.132813+00:00",
+      "license": "OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright",
+      "coverage": "Named highways in NZ extract; locality hints use 20 km proximity, not municipal boundaries",
+      "components": 92447,
+      "named_ways": 232454,
+      "representative_policy": "Point on source geometry at half aggregate length of ways sorted by ID; not a user position or unique midpoint"
+    },
+    "water": {
+      "source_sha256": "18412e3bf7e6a2a7eb96fa67d159f786f224104c9f8202a07e722c49aa28dde1",
+      "source_url": "https://download.geofabrik.de/australia-oceania/new-zealand-261011.osm.pbf",
+      "revision": "Geofabrik NZ 2026-10-11 water-geometry-v2",
+      "title": "OSM water/path geometry for on-demand approaches",
+      "prepared_at": "2026-10-13T07:15:48.126108+00:00",
+      "license": "OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright",
+      "coverage": "NZ extract; typed lake/river boundaries, stream centrelines and eligible paths",
+      "policy": "Original geometry in <=64-vertex pieces; approaches calculated only for local requests",
+      "statistics": {
+        "source_features": 94599,
+        "source_paths": 660278,
+        "source_blockers": 292754,
+        "water_parts": 125247,
+        "path_parts": 698576,
+        "blocker_parts": 293984,
+        "features": 94599
+      },
+      "extraction_notes": "Recovered completed extraction from interrupted v1 build, discarding all precalculated approaches. Original callback skip counts unavailable; every recovered geometry revalidated during indexing."
+    },
+    "routing": {
+      "version": 1,
+      "engine": "routino",
+      "engine_version": "Routino version 3.4.4 <https://routino.org/>.",
+      "profile": "nz-foot-v1",
+      "revision": "geofabrik-nz-2026-10-11-nz-foot-v1",
+      "coverage": "New Zealand, Geofabrik national extract; mapped pedestrian network",
+      "source_url": "https://download.geofabrik.de/australia-oceania/new-zealand-261011.osm.pbf",
+      "source_sha256": "18412e3bf7e6a2a7eb96fa67d159f786f224104c9f8202a07e722c49aa28dde1",
+      "license": "OpenStreetMap contributors, ODbL 1.0; https://www.openstreetmap.org/copyright",
+      "profile_license": "Derived Routino XML: AGPL-3.0-or-later; see COPYING-Routino and XML notices",
+      "prepared_at": "2026-10-12T22:48:23.607088+00:00",
+      "build_command": [
+        "See tools/build_routing_graph.py and the retained source revision/profile"
+      ],
+      "files": {
+        "nodes.mem": {
+          "sha256": "e00e1e31911945e87c9bde8d83605122e78894d38a761bd1181145320799104a",
+          "bytes": 53100120
+        },
+        "segments.mem": {
+          "sha256": "6d50972533ea995b567eeec8e82ead2d5a75befcdb05431497df8ec0e1e88184",
+          "bytes": 82718952
+        },
+        "ways.mem": {
+          "sha256": "0df91704e978af7c2de3598a42cad77be4662cc59a0bcd75ccee18373f74c0a6",
+          "bytes": 2561106
+        },
+        "relations.mem": {
+          "sha256": "c9007ce736dbf885ea89e55af2477a7af65bdc520eec7252e1595461e05c4b43",
+          "bytes": 1204
+        },
+        "profiles.xml": {
+          "sha256": "6b2d176ff17c6d96d0d435ad1136e21770b9c36f4168ed0da89836c3123ee47f",
+          "bytes": 2606
+        },
+        "tagging.xml": {
+          "sha256": "eb975b39523844caf77494ea12765390f8ceee7c41a1e5246ee4d84995f2a03e",
+          "bytes": 44662
+        },
+        "translations.xml": {
+          "sha256": "2bd9875582cd2c3a2722e3d3a9bf9b45909b357f62e5cfd3ae77276473482fa3",
+          "bytes": 57661
+        }
+      },
+      "limitations": "Mapped pedestrian estimates, not verified access/safety; no ferries or motorways; conditional access excluded."
+    }
+  }
+}

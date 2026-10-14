@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan%202026.csv",
+    "retrieved_at": "2026-10-12T21:43:02.660172+00:00",
+    "sha256": "dbe486d9934ac6bbed5e6e6c9fb6ed9683a529234baab1b8f989a06701986f4a",
+    "bytes": 19490
+  },
+  {
+    "url": "https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan%202027.csv",
+    "retrieved_at": "2026-10-12T21:43:02.893918+00:00",
+    "sha256": "b343a71f171cf507e2fac3bac7fa89e812f299fee202c8cef4faed7ab58166f7",
+    "bytes": 19482
+  }
+]

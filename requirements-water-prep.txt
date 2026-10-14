@@ -1,0 +1,3 @@
+# Desktop preparation/testing only; do not install for normal Pi bot operation.
+osmium>=3.7,<5
+shapely>=2.0,<3

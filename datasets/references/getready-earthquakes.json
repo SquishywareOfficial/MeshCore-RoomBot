@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "dataset": {
+    "id": "getready-earthquakes",
+    "kind": "emergency",
+    "title": "National Emergency Management Agency / Get Ready: Earthquakes",
+    "source_url": "https://getready.govt.nz/emergency/earthquakes",
+    "license": "CC BY 4.0; National Emergency Management Agency / Crown. Adapted short text. https://creativecommons.org/licenses/by/4.0/",
+    "revision": "reviewed 2026-10-13; source revision not stated",
+    "retrieved_at": "2026-10-12T21:26:37+00:00",
+    "coverage": "One reviewed short reference; not a complete guide or live instruction"
+  },
+  "records": [
+    {
+      "id": "earthquakes-basic",
+      "title": "Earthquakes basic reference",
+      "topics": [
+        "earthquake",
+        "earthquakes",
+        "shaking",
+        "drop cover hold"
+      ],
+      "text": "In an earthquake Drop, Cover and Hold. Protect your head and neck. The source also explains adaptations for different mobility needs; use the version appropriate for your body."
+    }
+  ]
+}

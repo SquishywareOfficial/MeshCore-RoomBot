@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "dataset": {
+    "id": "getready-floods",
+    "kind": "emergency",
+    "title": "National Emergency Management Agency / Get Ready: Floods",
+    "source_url": "https://getready.govt.nz/emergency/floods",
+    "license": "CC BY 4.0; National Emergency Management Agency / Crown. Adapted short text. https://creativecommons.org/licenses/by/4.0/",
+    "revision": "reviewed 2026-10-13; source revision not stated",
+    "retrieved_at": "2026-10-12T21:26:37+00:00",
+    "coverage": "One reviewed short reference; not a complete guide or live instruction"
+  },
+  "records": [
+    {
+      "id": "floods-basic",
+      "title": "Floods basic reference",
+      "topics": [
+        "flood",
+        "floods",
+        "flooding",
+        "floodwater"
+      ],
+      "text": "If water is rising, move to higher ground without waiting for a warning. Avoid entering floodwater on foot, swimming, or in a vehicle. Treat floodwater as contaminated. Follow local emergency instructions."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "enabled_commands": [
+    "ping",
+    "help",
+    "about",
+    "source",
+    "details",
+    "directory",
+    "emergency",
+    "guide",
+    "place",
+    "distance",
+    "bearing",
+    "towns",
+    "walktime",
+    "tides",
+    "notice",
+    "checkin",
+    "lastseen",
+    "sun",
+    "calc"
+  ],
+  "default_location": "Hamilton",
+  "timezone": "Pacific/Auckland",
+  "data_dir": "~/.meshcore-room-bot/data",
+  "limits": {
+    "query_results": 100,
+    "paging_users": 128,
+    "page_ttl_seconds": 300,
+    "request_cooldown_seconds": 3
+  },
+  "clock_max_jump_seconds": 5,
+  "community": {
+    "notice_days": 7,
+    "checkin_days": 30,
+    "notice_limit": 1000,
+    "checkin_limit": 512
+  },
+  "aliases": {}
+}

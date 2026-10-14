@@ -1,0 +1,423 @@
+{
+  "trip": {
+    "locations": [
+      {
+        "type": "break",
+        "lat": -37.780806,
+        "lon": 175.272917,
+        "original_index": 0
+      },
+      {
+        "type": "break",
+        "lat": -37.799728,
+        "lon": 174.871112,
+        "side_of_street": "left",
+        "original_index": 1
+      }
+    ],
+    "legs": [
+      {
+        "maneuvers": [
+          {
+            "type": 1,
+            "instruction": "Walk south.",
+            "verbal_succinct_transition_instruction": "Walk south. Then Turn right onto Willoughby Street.",
+            "verbal_pre_transition_instruction": "Walk south. Then Turn right onto Willoughby Street.",
+            "verbal_post_transition_instruction": "Continue for less than 10 meters.",
+            "bearing_after": 201,
+            "time": 2.902,
+            "length": 0.004,
+            "cost": 2.902,
+            "begin_shape_index": 0,
+            "end_shape_index": 1,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto Willoughby Street.",
+            "verbal_transition_alert_instruction": "Turn right onto Willoughby Street.",
+            "verbal_succinct_transition_instruction": "Turn right.",
+            "verbal_pre_transition_instruction": "Turn right onto Willoughby Street.",
+            "verbal_post_transition_instruction": "Continue for 100 meters.",
+            "street_names": [
+              "Willoughby Street"
+            ],
+            "bearing_before": 201,
+            "bearing_after": 295,
+            "time": 68.131,
+            "length": 0.099,
+            "cost": 73.131,
+            "begin_shape_index": 1,
+            "end_shape_index": 8,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left onto Mill Street/9.",
+            "verbal_transition_alert_instruction": "Turn left onto Mill Street.",
+            "verbal_succinct_transition_instruction": "Turn left.",
+            "verbal_pre_transition_instruction": "Turn left onto Mill Street, 9.",
+            "verbal_post_transition_instruction": "Continue for 2.5 kilometers.",
+            "street_names": [
+              "9"
+            ],
+            "begin_street_names": [
+              "Mill Street",
+              "9"
+            ],
+            "bearing_before": 294,
+            "bearing_after": 202,
+            "time": 1944.014,
+            "length": 2.668,
+            "cost": 2004.307,
+            "begin_shape_index": 8,
+            "end_shape_index": 96,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 24,
+            "instruction": "Keep left to take Dinsdale roundabout/SH 23.",
+            "verbal_transition_alert_instruction": "Keep left to take Dinsdale roundabout.",
+            "verbal_pre_transition_instruction": "Keep left to take Dinsdale roundabout, SH 23.",
+            "verbal_post_transition_instruction": "Continue for 30 meters.",
+            "street_names": [
+              "Dinsdale roundabout",
+              "SH 23"
+            ],
+            "bearing_before": 247,
+            "bearing_after": 226,
+            "time": 21.529,
+            "length": 0.028,
+            "cost": 43.058,
+            "begin_shape_index": 96,
+            "end_shape_index": 101,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto Whatawhata Road/SH 23.",
+            "verbal_transition_alert_instruction": "Turn right onto Whatawhata Road.",
+            "verbal_succinct_transition_instruction": "Turn right.",
+            "verbal_pre_transition_instruction": "Turn right onto Whatawhata Road, SH 23.",
+            "verbal_post_transition_instruction": "Continue for 1.5 kilometers.",
+            "street_names": [
+              "Whatawhata Road",
+              "SH 23"
+            ],
+            "bearing_before": 197,
+            "bearing_after": 246,
+            "time": 923.065,
+            "length": 1.263,
+            "cost": 935.461,
+            "begin_shape_index": 101,
+            "end_shape_index": 144,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto Newcastle Road.",
+            "verbal_transition_alert_instruction": "Turn right onto Newcastle Road.",
+            "verbal_succinct_transition_instruction": "Turn right.",
+            "verbal_pre_transition_instruction": "Turn right onto Newcastle Road.",
+            "verbal_post_transition_instruction": "Continue for 30 meters.",
+            "street_names": [
+              "Newcastle Road"
+            ],
+            "bearing_before": 273,
+            "bearing_after": 12,
+            "time": 25.411,
+            "length": 0.03,
+            "cost": 31.682,
+            "begin_shape_index": 144,
+            "end_shape_index": 146,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left.",
+            "verbal_transition_alert_instruction": "Turn left.",
+            "verbal_succinct_transition_instruction": "Turn left. Then Turn left onto the walkway.",
+            "verbal_pre_transition_instruction": "Turn left. Then Turn left onto the walkway.",
+            "verbal_post_transition_instruction": "Continue for less than 10 meters.",
+            "bearing_before": 11,
+            "bearing_after": 273,
+            "time": 5.646,
+            "length": 0.008,
+            "cost": 10.646,
+            "begin_shape_index": 146,
+            "end_shape_index": 147,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left onto the walkway.",
+            "verbal_transition_alert_instruction": "Turn left onto the walkway.",
+            "verbal_succinct_transition_instruction": "Turn left.",
+            "verbal_pre_transition_instruction": "Turn left onto the walkway.",
+            "verbal_post_transition_instruction": "Continue for 200 meters.",
+            "bearing_before": 273,
+            "bearing_after": 213,
+            "time": 187.065,
+            "length": 0.2,
+            "cost": 214.808,
+            "begin_shape_index": 147,
+            "end_shape_index": 156,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left onto Taotahi Avenue.",
+            "verbal_transition_alert_instruction": "Turn left onto Taotahi Avenue.",
+            "verbal_succinct_transition_instruction": "Turn left.",
+            "verbal_pre_transition_instruction": "Turn left onto Taotahi Avenue.",
+            "verbal_post_transition_instruction": "Continue for 30 meters.",
+            "street_names": [
+              "Taotahi Avenue"
+            ],
+            "bearing_before": 253,
+            "bearing_after": 156,
+            "time": 17.646,
+            "length": 0.025,
+            "cost": 22.646,
+            "begin_shape_index": 156,
+            "end_shape_index": 160,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto Whatawhata Road/SH 23. Continue on SH 23.",
+            "verbal_transition_alert_instruction": "Turn right onto Whatawhata Road.",
+            "verbal_succinct_transition_instruction": "Turn right.",
+            "verbal_pre_transition_instruction": "Turn right onto Whatawhata Road, SH 23.",
+            "verbal_post_transition_instruction": "Continue on SH 23 for 23 kilometers.",
+            "street_names": [
+              "SH 23"
+            ],
+            "begin_street_names": [
+              "Whatawhata Road",
+              "SH 23"
+            ],
+            "bearing_before": 174,
+            "bearing_after": 273,
+            "time": 17992.434,
+            "length": 22.916,
+            "cost": 18896.498,
+            "begin_shape_index": 160,
+            "end_shape_index": 748,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 23,
+            "instruction": "Keep right to take Main Road.",
+            "verbal_transition_alert_instruction": "Keep right to take Main Road.",
+            "verbal_pre_transition_instruction": "Keep right to take Main Road.",
+            "verbal_post_transition_instruction": "Continue for 18 kilometers.",
+            "street_names": [
+              "Main Road"
+            ],
+            "begin_street_names": [
+              "Main Road",
+              "SH 23"
+            ],
+            "bearing_before": 256,
+            "bearing_after": 260,
+            "time": 13938.22,
+            "length": 17.895,
+            "cost": 14649.355,
+            "begin_shape_index": 748,
+            "end_shape_index": 1150,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 23,
+            "instruction": "Keep right to stay on Main Road.",
+            "verbal_transition_alert_instruction": "Keep right to stay on Main Road.",
+            "verbal_pre_transition_instruction": "Keep right to stay on Main Road.",
+            "verbal_post_transition_instruction": "Continue for 30 meters.",
+            "street_names": [
+              "Main Road"
+            ],
+            "bearing_before": 315,
+            "bearing_after": 328,
+            "time": 16.234,
+            "length": 0.025,
+            "cost": 16.234,
+            "begin_shape_index": 1150,
+            "end_shape_index": 1153,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 9,
+            "instruction": "Bear right.",
+            "verbal_transition_alert_instruction": "Bear right.",
+            "verbal_succinct_transition_instruction": "Bear right. Then Turn left.",
+            "verbal_pre_transition_instruction": "Bear right. Then Turn left.",
+            "verbal_post_transition_instruction": "Continue for less than 10 meters.",
+            "bearing_before": 325,
+            "bearing_after": 2,
+            "time": 2.117,
+            "length": 0.003,
+            "cost": 9.234,
+            "begin_shape_index": 1153,
+            "end_shape_index": 1154,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left.",
+            "verbal_transition_alert_instruction": "Turn left.",
+            "verbal_succinct_transition_instruction": "Turn left. Then Turn left.",
+            "verbal_pre_transition_instruction": "Turn left. Then Turn left.",
+            "verbal_post_transition_instruction": "Continue for 20 meters.",
+            "bearing_before": 2,
+            "bearing_after": 317,
+            "time": 11.292,
+            "length": 0.016,
+            "cost": 22.589,
+            "begin_shape_index": 1154,
+            "end_shape_index": 1158,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 15,
+            "instruction": "Turn left.",
+            "verbal_transition_alert_instruction": "Turn left.",
+            "verbal_succinct_transition_instruction": "Turn left. Then Keep right to take Bow Street.",
+            "verbal_pre_transition_instruction": "Turn left. Then Keep right to take Bow Street.",
+            "verbal_post_transition_instruction": "Continue for less than 10 meters.",
+            "bearing_before": 317,
+            "bearing_after": 268,
+            "time": 2.824,
+            "length": 0.004,
+            "cost": 5.648,
+            "begin_shape_index": 1158,
+            "end_shape_index": 1159,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 23,
+            "instruction": "Keep right to take Bow Street.",
+            "verbal_transition_alert_instruction": "Keep right to take Bow Street.",
+            "verbal_pre_transition_instruction": "Keep right to take Bow Street. Then Turn right onto the walkway.",
+            "verbal_post_transition_instruction": "Continue for 10 meters.",
+            "street_names": [
+              "Bow Street"
+            ],
+            "bearing_before": 268,
+            "bearing_after": 291,
+            "time": 9.089,
+            "length": 0.014,
+            "cost": 14.089,
+            "begin_shape_index": 1159,
+            "end_shape_index": 1162,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto the walkway.",
+            "verbal_transition_alert_instruction": "Turn right onto the walkway.",
+            "verbal_succinct_transition_instruction": "Turn right. Then Turn right onto the walkway.",
+            "verbal_pre_transition_instruction": "Turn right onto the walkway. Then Turn right onto the walkway.",
+            "verbal_post_transition_instruction": "Continue for less than 10 meters.",
+            "bearing_before": 291,
+            "bearing_after": 35,
+            "time": 6.351,
+            "length": 0.009,
+            "cost": 11.351,
+            "begin_shape_index": 1162,
+            "end_shape_index": 1164,
+            "rough": true,
+            "verbal_multi_cue": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 10,
+            "instruction": "Turn right onto the walkway.",
+            "verbal_transition_alert_instruction": "Turn right onto the walkway.",
+            "verbal_succinct_transition_instruction": "Turn right.",
+            "verbal_pre_transition_instruction": "Turn right onto the walkway.",
+            "verbal_post_transition_instruction": "Continue for 100 meters.",
+            "bearing_before": 39,
+            "bearing_after": 119,
+            "time": 68.371,
+            "length": 0.105,
+            "cost": 68.371,
+            "begin_shape_index": 1164,
+            "end_shape_index": 1181,
+            "rough": true,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          },
+          {
+            "type": 6,
+            "instruction": "Your destination is on the left.",
+            "verbal_transition_alert_instruction": "Your destination will be on the left.",
+            "verbal_pre_transition_instruction": "Your destination is on the left.",
+            "bearing_before": 12,
+            "time": 0.0,
+            "length": 0.0,
+            "cost": 0.0,
+            "begin_shape_index": 1181,
+            "end_shape_index": 1181,
+            "travel_mode": "pedestrian",
+            "travel_type": "foot"
+          }
+        ],
+        "summary": {
+          "has_time_restrictions": false,
+          "has_toll": false,
+          "has_highway": false,
+          "has_ferry": false,
+          "min_lat": -37.838409,
+          "min_lon": 174.870865,
+          "max_lat": -37.780463,
+          "max_lon": 175.272876,
+          "time": 35242.351,
+          "length": 45.313,
+          "cost": 37032.019
+        },
+        "shape": "rr}`gAyyxhmIjAd@mChK{A~F_AnDiFjSkBxHa@|A_AzD|DxApXpMbLvFLHrGrEzDfDhDpCrE`FpHjKfBjCx_AxwAtD`G|i@vz@dVt^|PlWfFhI|GrJjWba@~ExH`FtJzDxKhCbJ`B`G|C~JhEdL`F~KhE`HxF|Gvc@~i@~JjM~HfLzHfJl@v@dCtCbCjDrE`H`AfEz@tAbE~GjDhGpPv[n\\zq@fQ|_@xDhKjH`TfE`MzCdIjA|CZjAxBpFtDjH`@pAdEbLtBjJt@vBFTjJdYh@bBvStm@|IhWfT`n@zZz|@`f@dvA|Ptf@vHzTzOhd@dC|GvAbEh]~bAvh@h{AjItUzObe@DhC`@rAvCzJh@|AN`@Nd@x@`CzCxGzAzB~CnEjB`C|CzDd@bAxA`D~BnGd@nBnAdDnAbBrAbArAb@x@Tf@nCj@rBz@zCrB`KdI`d@^bCdCtOf@tDhBhFbA~FzB~LnDtSfA~CzDvWjAlK|AvInF|[pAzExAfJHpB|@`FhJfk@fJ~j@lNh{@xChQjKno@rCtPhHbd@rIri@jIne@VdBpAbLh@dH`@nGXvHTbIBnIGbJW`QoA|n@sAxy@eAng@]fTaB[mLmBGzDnAd@Zl@a@ju@gBfVY`D]hY@~RDjDPjAzBgBpAYjBYlBBqA`eAiAr]iAnNmBnQqHlY{S`u@yNhi@qh@fnB}e@~cBwWz`AsExTsFlZoO`|@cHxZaW~t@uLng@cEzXqChc@_@~^D~o@n@fq@X|QhA`QfBnZfC|XrNz|AtAlQnAhV\\vUvMveE~IhxCtGb`DxDjbFp@xiBx@b_@fAxZvAfe@z@df@Bx@sCpmDmBpwCIxMe@bMs@bM_@lEw@xFkClKqDlJyDpHmQpYyKbTaGvSmCpLoAbPVb]rKvzBd@jMX`MFrM]vRqE|kBkF|aCe@hPYnMGlFCbFBzELdFTfFZ~Ef@dFb@tEl@zEpK`u@vBnM`CzO`CxNtArG`BpG|CxJbCzGbEtJfS|b@jZzn@nIbP|DvFfFlFtChCtDfCnHtEfiBxcApHrE`HrGbCzCrBpDjBlDdB`EpA~DpAlEv@zEn@hFVvEL`FUjM_@tEs@lFgC~KoPxg@uCdJeBhH{@fE{@jHg@nGMzGCzFXjKb@bMbA|Rl@zLb@lMZxLXtRd@`b@t@|tArCviFj@ddATla@xBjuEb@doBTlb@f@r]`@bQlAxf@rBre@b@~Fj@|HdBrObCpOzBrMpEtUdEdQfD~LtF|QpInUtHpQnFbL`HhMpG`LjGzJbFbHnGbIbHdIbExExE|ErItHbFdExGdFfJdH`ObKbR|KdTrL`P`Ido@hZtHxDrHfEzOhK|`@fZnNpKfUvP`HlGdCdCjC`DpCtDnCrE`C|E`BxFtAvFfAlHd@pFZlFD`FIxE]bJwC`p@{Dfx@]xGk@|Gm@tEw@lFgChLud@h}AmC~JcApEcAdFk@hEk@fFWnEK~E@hFHnFZ`M`NtiCvAxMlCtMbCtJ|CpIzChGvSfa@bBnD~AtDrA~DjA`E`AxEf@|E\\rETlFF`HCzHu@h[AbIJxFP~Dd@fF~@~E|@dE|A~ElT~f@fD|IlDtKnClL~ApLf@vE\\jFHrE@fFAjE[pFsAbMeBjLgCjLsCzK{DnKiBvDsBdDmBxCiCxCgCpCkCdC{CzB{CfBaDbB{CpA_JzCsIvBeI~B_IrDoHhF}BnC_C`DeBfDeBpDyA|EaA`Fe@jDe@nFQ|DGjFFfEn@|MjIrhAfHl}@r@dKtB~YbDbb@tBrQ|BpQ|Hje@nq@x}Dde@bmCbLrg@rLj_@fAfDzEdOpOdf@|Tfk@`f@zeAfD`JhDzKrCvKjCtLfBbL`BzLtAlLdAvLt@lMd@bMNdM?vLUrMc@hMu@xLaAtLoAzMaBbLsBbLiCpLuC`LaDpKsD`LyK|Z{FhP}FfSyChMyB~KyAnLqA|Li@vLYpMAbN^~Kr@nLfAlMtAdMfKt|@lAzMr@lL^bMFxKUfNs@nKsAhM{BtMmCjLcDvKmDbJgFhJmY`c@oZ|l@oH`VeIh\\{^|aCeJvs@iBdOwCn_As@tw@kCflAKpe@tAxe@bEnXfMld@~Q~[rSnTnVdSfXnTpS~Vlc@|p@zY`h@~Yhk@jOzVlS|Tf_@lVjM`LbNfPxNzWrL`Yra@dmAdMv\\pGjNtJzNlL~JlPbJxUhHdl@rJjKtCp_Axh@tTpKtS~GbRzCpXlAnWpEbWtJ`K|GpLhKnJ`MztAfqBnQnRtOxJpM`IlQnCr[s@~g@ZnhAcBzYEzh@z@v_AdHfOQtHgAnZ{M~QgGhU}E~KeB|MyBxJFnFpA`X`JfMdHzC~CvCbF|ApGfAnQv@~M|BfIlDjGjHpF~eApa@nPdDrUxClIdCpFjGbBpGC~O{DpO{Ufd@cC~LAtO|Nd{@dFnNjKpSbOt_@bIzXxOt`AlGhXfOz\\dGjJp_@|m@`JhI`PfJlK~EzJjIxJxEj^dDrEhBzAvHHdJwNbe@{@fLnCvJnGvHxCzBvFbAdGmAhXcMlGyCxFDpDx@tFv@xHbErH`KhAdJ}AdKsF`Oq[|c@_HdLwBtI{BvQ{CdMwDdHqGrFqP~H}EvDgCjI}D~^gV~yASrHr@hHxJfShB~IBxJ_@jDgBjDeJlOuB`FeAdJHbOtB|Q`DtI~DrF`DxC`HjBbWTzE~@xE`CpFrHvAvI?bFgB~H_ElFqKlHuKzDue@dGwIzBcG|D{FjH}E`NwAdNTdMnCbg@@bOiAfKaDbPoQl{@oAvMq@vVVzMzGdu@bAnR?hXgHfpBsDza@iEfX_DfPmo@|~B_D`NkAbKm@hJC`IHzHt@jM~ApK~BxJbCvHfCjF`DzFnExFjGjHrJ`Krq@jo@d`@jb@rK`MxHjLvGvPlFhQtSn_AvFnZ`BzS^`VmBvU{FnWqMdZqz@~aBcIlRgDzOkBvRs@dZ~@`w@g@|LsAfPiEhQu]|`AgG|XqCzQw@dWh@~TnC~WfG`\\zMhi@`CpLdFrRfHlSbOzVjg@`m@|f@nh@ho@ht@vS|NnLbGjMhCpL@rToBhoA_U|M{BvTkE|Q\\pO|CtM|HdQhSvFvLfChIzAhMt@pFb@`TY|CkD~]iFtQoa@|gA{H~SkGbQoGnV}ExZaPbxBuBbWcBpQgCrN_ErPgXl|@gXjy@kLdc@_CbQw@`VT~RbC|UxFh[zp@rvBnp@|wBfHlTzG|WbC`\\LxWeDpb@qH|a@{FjXsQp{@yAzKyA|OeCfg@oBxWiDnQoDfMuGrOgKlQqUp\\cf@|m@}JbKuJhIyM`JaT|IqWbKqNzHwIvGc|@x_A}TpUyVtYqKdNuHrNoEpNwD~OkChTmEny@uEfbAq@rTRjS`AtL|^|jCx[t_CnA`LvAbNr@`L|@dN\\zKLvLBrMOrMc@|OaA|VmAtHyHrm@{Ndj@mRph@s`@v}@{Op^eP~^s`BtsCgn@liAiz@~yAgkAtrBcRf[gFhIaEdFcElEkFvE{FfE}^pTsFdDeFtE_FnFgF|GkDjG{BxE_CfHeAdEeA~EcCrN{@hMi@tPwC|yA}BhjA_@lKOlSFtStApS`BpLxChLfDdJjExH|LvRjiCr~CvLrPvDtHtDzG`K~W`Mta@dW||@zm@vvBjGfU~CjLdBzIfEhU~E|Vz_@jmBbB~OdCzPbAnMf@dOXrSWvoAjAx{AhFdiChEnfCH`FxAhYhD~YbDdOlD`P|HnUdJpUtOrZbNhYrOzYtv@|}AlZzm@hMzWnLlUzNpV`QtU`fAxdAvJxKjM~NhL`RtGfLxEdL`BfGtAvIpD~ZxA`[lCrw@~ArM|GdVpHrQhMfSzThUzR~Tr\\~\\pPvZpEnMpCtMnBjSGpZgAnVsDtWiGfX_xAhmGqq@zqCeYzlAeLnh@uGnYgB~HKf@iBjJ}A~Iu@dIw@nJa@tKIlMFlTd@jSl@vXr@hUz@~WNbT]vMo@dLkAtKuBfLwCnLiDjJwE~IuD~F{EtGcFzFkGfEiFvCuGpCyVtJoMxE{K`EuPhI{JnG{UzQe]`Zi]b[w]t\\gk@br@uUzVgUpY_]tc@gO~\\yCdK_@nA{Mfd@}EjOiLn\\wNj^wz@bdBw\\|q@kNtYmMrVoOfUqVzWuq@hn@wXfX}YxVccAbaAqUzTaStSuGlJwLfV_Hb^_Fj]gGdi@mEla@sBjXKdP~@|VtCn\\hF~Q~FbPrKzWbq@f_B~aBr~DnE~M`D~MlBdMlAfNp@~LKrPg@hMeAjK_BlKeBhIaEzNuCfIaD~GcE|GcLxLwJxIkM|HiRpIcl@dTis@dW_XdIcO`DaIbAwJj@cK[}IeAsHyBeJyDmMoIqd@}\\sd@{]_OwJgQqJuPmG}McEmPyDqZoHeU{FwNaFcNuFqNqH{RaLggAgr@cv@gf@{JoFyJwEwLiE{K}CqIeAcJe@qJCkKfAgIjBuGxBmG`DcJlGaIbHsJrKoUhZ{g@nr@kVj\\cZz`@aV|\\gNxS_NnUur@hnA{L|S{L~ScVhd@yEbJoEtKwAdEaCdI}AtGyBtMgAnLg@hMCzL^nMn@dL|@~LnI`~@~@lLv@fM^lK?hMc@fMmApLuBlLoCnKyDxK_HlOeRra@}BdGaBfGw@|Ei@~DWfEK~EC~FJfFXxEtA`OvCv[f@hJXdJ@bGElGe@rKg@nFu@vEaArE{BvIcTzu@wA|FoAdG_CxMaAtGuD|YwBdQgEr\\kFf`@wA`J_A`FcApEwAtDaAvCo@tA{AvCyGpKeGlIeGxGsEpDqNdJk^fU}QzKeTjKkFbD{ApAwA`BmDjFCFyBlAwD~CcAhAm@AcATy@n@i@dAUrA@vAe@fBc@vCQf@a@]}A_BbB}C^}@IqAc@yBcBiF_BqCgAuCa@{@_@g@g@e@e@YgA]{A[{Ci@cDq@qDm@}Ba@"
+      }
+    ],
+    "summary": {
+      "has_time_restrictions": false,
+      "has_toll": false,
+      "has_highway": false,
+      "has_ferry": false,
+      "min_lat": -37.838409,
+      "min_lon": 174.870865,
+      "max_lat": -37.780463,
+      "max_lon": 175.272876,
+      "time": 35242.351,
+      "length": 45.313,
+      "cost": 37032.019
+    },
+    "status_message": "Found route between points",
+    "status": 0,
+    "units": "kilometers",
+    "language": "en-US"
+  }
+}
